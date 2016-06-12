@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="Area">
+
+    <resultMap id="AreaMapper" type="com.gcloud.goods.domain.Area">
+        <result property="id" column="id"/>
+        <result property="type" column="type"/>
+        <result property="name" column="name"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="zip" column="zip"/>
+    </resultMap>
+
+    <select id="queryAreaList" resultMap="AreaMapper" parameterType="map">
+        SELECT id, type, name, parent_id, zip FROM ts_area
+    </select>
+</mapper>

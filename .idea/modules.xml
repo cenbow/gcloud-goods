@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods.iml" filepath="$PROJECT_DIR$/gcloud-goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods-api/gcloud-goods-api.iml" filepath="$PROJECT_DIR$/gcloud-goods-api/gcloud-goods-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods-core/gcloud-goods-core.iml" filepath="$PROJECT_DIR$/gcloud-goods-core/gcloud-goods-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods-dao/gcloud-goods-dao.iml" filepath="$PROJECT_DIR$/gcloud-goods-dao/gcloud-goods-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods-domain/gcloud-goods-domain.iml" filepath="$PROJECT_DIR$/gcloud-goods-domain/gcloud-goods-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods-dubbo/gcloud-goods-dubbo.iml" filepath="$PROJECT_DIR$/gcloud-goods-dubbo/gcloud-goods-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods-solr/gcloud-goods-solr.iml" filepath="$PROJECT_DIR$/gcloud-goods-solr/gcloud-goods-solr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods-sync/gcloud-goods-sync.iml" filepath="$PROJECT_DIR$/gcloud-goods-sync/gcloud-goods-sync.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcloud-goods-web/gcloud-goods-web.iml" filepath="$PROJECT_DIR$/gcloud-goods-web/gcloud-goods-web.iml" />
+    </modules>
+  </component>
+</project>

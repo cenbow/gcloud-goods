@@ -1,0 +1,18 @@
+<rules>
+    <rule>
+        <namespace>User</namespace>
+        <shards>master</shards>
+    </rule>
+    <rule>
+        <namespace>Shop</namespace>
+        <shards>master</shards>
+    </rule>
+    <rule>
+        <namespace>OperationData</namespace>
+        <shards>slave</shards>
+    </rule>
+    <rule>
+        <namespace>ArticleBizOrder</namespace>
+        <shards>slave</shards>
+    </rule>
+</rules>

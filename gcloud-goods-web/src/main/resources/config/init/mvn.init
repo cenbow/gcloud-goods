@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=taobao-sdk-20150906.jar -DgroupId=com.taobao -DartifactId=taobao-sdk -Dversion=20150906 -Dpackaging=jar -DgeneratePom=true
