@@ -75,7 +75,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="gcloud-goods" target="1.5" />
+      <module name="gcloud-goods" target="1.8" />
       <module name="gcloud-goods-api" target="1.8" />
       <module name="gcloud-goods-core" target="1.8" />
       <module name="gcloud-goods-dao" target="1.8" />
