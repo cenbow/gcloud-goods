@@ -63,4 +63,13 @@ public class Area {
     public void setZip(String zip) {
         this.zip = zip;
     }
+
+    @Override
+    public String toString() {
+
+        StringBuilder builder = new StringBuilder();
+        builder.append("{id:").append(id).append(",type:").append(type).append(",name:").append(name);
+        builder.append(",parentId:").append(parentId).append(",zip:").append(zip).append("}");
+        return builder.toString();
+    }
 }

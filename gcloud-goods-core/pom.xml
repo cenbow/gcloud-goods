@@ -36,7 +36,7 @@
 
         <dependency>
             <groupId>com.gcloud</groupId>
-            <artifactId>gcloud-event-mongo</artifactId>
+            <artifactId>gcloud-event-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

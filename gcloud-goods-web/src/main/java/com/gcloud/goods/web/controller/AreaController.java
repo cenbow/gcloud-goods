@@ -1,6 +1,8 @@
 package com.gcloud.goods.web.controller;
 
 
+import com.gcloud.event.core.EventInfo;
+import com.gcloud.event.core.IEventCenter;
 import com.gcloud.goods.core.IAreaService;
 import com.gcloud.goods.domain.Area;
 import org.apache.logging.log4j.LogManager;
@@ -11,16 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.List;
-
-/**
- * 地区信息
- * @author chenjin
- * @since 2015年11月22日 上午11:35:28
- **/
 
 /**
  * @author ChenJin
@@ -39,12 +36,16 @@ public class AreaController {
     @Autowired
     IAreaService areaService;
 
+    @Resource
+    private IEventCenter eventCenter;
+
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     @ResponseBody
     public Object login(HttpServletRequest request, HttpServletResponse response) {
 
         List<Area> areaList =areaService.queryAreaList(new HashMap<String, Object>());
         logger.info(areaList.size());
+        eventCenter.fireEvent(this, new EventInfo("gcloud.goods.area.list").setArgs(new Object[]{areaList}), null);
         return areaList;
     }
 
