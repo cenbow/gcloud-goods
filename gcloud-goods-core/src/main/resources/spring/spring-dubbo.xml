@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.gcloud.goods" />
+
+	<dubbo:application name="${gcloud.dubbo.provider}" />
+	<dubbo:registry address="${gcloud.dubbo.registry.url}" check="false" subscribe="false" />
+	<dubbo:protocol name="dubbo" port="${gcloud.dubbo.port}" />
+
+	<bean id="areaService" class="com.gcloud.goods.core.impl.AreaServiceImpl" />
+	<dubbo:service interface="com.gcloud.goods.core.IAreaService" ref="areaService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>
+</beans>

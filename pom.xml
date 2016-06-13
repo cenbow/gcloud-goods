@@ -30,7 +30,6 @@
         <module>gcloud-goods-core</module>
         <module>gcloud-goods-domain</module>
         <module>gcloud-goods-sync</module>
-        <module>gcloud-goods-dubbo</module>
         <module>gcloud-goods-solr</module>
     </modules>
 
@@ -98,6 +97,32 @@
         <gcloud.commons.beanutils.version>1.9.2</gcloud.commons.beanutils.version>
         <gcloud.commons.fileupload.version>1.3.1</gcloud.commons.fileupload.version>
         <gcloud.commons.collections.version>3.2.2</gcloud.commons.collections.version>
+
+        <!-- cloud versions-->
+        <gcloud.guava.version>18.0</gcloud.guava.version>
+        <gcloud.solrj.version>6.0.0</gcloud.solrj.version>
+        <gcloud.kafka.version>0.10.0.0</gcloud.kafka.version>
+        <gcloud.mongo.version>3.2.2</gcloud.mongo.version>
+        <gcloud.dubbo.version>2.5.3</gcloud.dubbo.version>
+        <gcloud.druid.version>1.0.20</gcloud.druid.version>
+        <gcloud.shiro.version>1.2.4</gcloud.shiro.version>
+        <gcloud.mokito.version>1.10.19</gcloud.mokito.version>
+        <gcloud.com.aliyun.oss>2.2.3</gcloud.com.aliyun.oss>
+
+        <gcloud.metaq.version>1.4.6.2</gcloud.metaq.version>
+        <gcloud.zkclient.version>0.1</gcloud.zkclient.version>
+        <gcloud.joda.time.version>2.9.4</gcloud.joda.time.version>
+        <gcloud.netty.version>4.0.18.Final</gcloud.netty.version>
+        <gcloud.fastjson.version>1.2.12</gcloud.fastjson.version>
+        <gcloud.zookeeper.version>3.4.8</gcloud.zookeeper.version>
+
+        <gcloud.xmemcached.version>2.0.0</gcloud.xmemcached.version>
+        <gcloud.jackson.core.version>2.2.2</gcloud.jackson.core.version>
+        <gcloud.redis.clients.version>2.8.1</gcloud.redis.clients.version>
+        <gcloud.jackson.mapper.version>1.9.13</gcloud.jackson.mapper.version>
+        <gcloud.spring.memcached.version>3.4.0</gcloud.spring.memcached.version>
+        <gcloud.google.collections.version>1.0</gcloud.google.collections.version>
+        <gcloud.aliyun.openservices.version>OTS-2.0.4</gcloud.aliyun.openservices.version>
     </properties>
 
     <dependencyManagement>
@@ -290,6 +315,83 @@
                 <artifactId>shiro-spring</artifactId>
                 <version>${gcloud.shiro.version}</version>
             </dependency>
+
+            <!-- cloud Start -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${gcloud.dubbo.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${gcloud.zookeeper.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.github.sgroschupf</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>${gcloud.zkclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongo-java-driver</artifactId>
+                <version>${gcloud.mongo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka_2.10</artifactId>
+                <version>${gcloud.kafka.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${gcloud.redis.clients.version}</version>
+                <type>jar</type>
+                <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-solrj</artifactId>
+                <version>${gcloud.solrj.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.mina</groupId>
+                <artifactId>mina-core</artifactId>
+                <version>${gcloud.shop.mina.version}</version>
+            </dependency>
+
+            <!-- 以下是有关阿里云服务的OSS库 -->
+            <dependency>
+                <groupId>com.aliyun.openservices</groupId>
+                <artifactId>aliyun-openservices</artifactId>
+                <version>${gcloud.shop.aliyun.openservices.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${gcloud.shop.com.aliyun.oss}</version>
+            </dependency>
+            <!-- cloud end -->
         </dependencies>
     </dependencyManagement>
 

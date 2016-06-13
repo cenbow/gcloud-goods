@@ -33,11 +33,23 @@
             <artifactId>gcloud-goods-dao</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
         <dependency>
             <groupId>com.gcloud</groupId>
             <artifactId>gcloud-event-core</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
         </dependency>
 
         <dependency>
@@ -69,4 +81,63 @@
             <artifactId>aspectjrt</artifactId>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <configPath>src/main/resources/config/dev</configPath>
+            </properties>
+            <build>
+                <filters>
+                    <filter>src/main/resources/config/dev/dubbo.properties</filter>
+                </filters>
+            </build>
+        </profile>
+        <profile>
+            <id>gray</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <configPath>src/main/resources/config/gray</configPath>
+            </properties>
+            <build>
+                <filters>
+                    <filter>src/main/resources/config/gray/dubbo.properties</filter>
+                </filters>
+            </build>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <configPath>src/main/resources/config/prod</configPath>
+            </properties>
+            <build>
+                <filters>
+                    <filter>src/main/resources/config/prod/dubbo.properties</filter>
+                </filters>
+            </build>
+        </profile>
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <configPath>src/main/resources/test/prod</configPath>
+            </properties>
+            <build>
+                <filters>
+                    <filter>src/main/resources/config/test/dubbo.properties</filter>
+                </filters>
+            </build>
+        </profile>
+    </profiles>
 </project>
