@@ -45,7 +45,7 @@ public class AreaController {
 
         List<Area> areaList =areaService.queryAreaList(new HashMap<String, Object>());
         logger.info(areaList.size());
-        eventCenter.fireEvent(this, new EventInfo("gcloud.goods.area.list").setArgs(new Object[]{areaList}), null);
+        eventCenter.fireEvent(this, new EventInfo("gcloud_goods_area_list").setArgs(new Object[]{"ChenJin"}), null);
         return areaList;
     }
 
