@@ -19,7 +19,7 @@ import java.util.Map;
  * @Description: 地址Service
  * @date 2016/6/1 13:53
  */
-@Service("areaService")
+//@Service("areaService")
 public class AreaServiceImpl implements IAreaService {
 
     private static final Logger logger = LogManager.getLogger(AreaServiceImpl.class);

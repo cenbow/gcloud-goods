@@ -23,6 +23,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="gcloud-goods-core" />
+    <orderEntry type="library" name="Maven: com.gcloud:gcloud-trade-core:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.gcloud:gcloud-trade-dao:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.gcloud:gcloud-trade-domain:1.0-SNAPSHOT" level="project" />
     <orderEntry type="module" module-name="gcloud-goods-dao" />
     <orderEntry type="module" module-name="gcloud-goods-domain" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.4.0" level="project" />

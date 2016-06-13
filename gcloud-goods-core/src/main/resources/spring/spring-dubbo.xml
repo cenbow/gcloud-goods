@@ -14,6 +14,5 @@
 	<dubbo:registry address="${gcloud.dubbo.registry.url}" check="false" subscribe="false" />
 	<dubbo:protocol name="dubbo" port="${gcloud.dubbo.port}" />
 
-	<bean id="areaService" class="com.gcloud.goods.core.impl.AreaServiceImpl" />
-	<dubbo:service interface="com.gcloud.goods.core.IAreaService" ref="areaService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>
+	<dubbo:reference id="areaService" interface="com.gcloud.trade.core.IAreaService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>
 </beans>

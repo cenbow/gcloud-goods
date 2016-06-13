@@ -2,34 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c54deb9-397d-46cd-8492-1c42e5faf0a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_sgroschupf_zkclient_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/dev/dubbo.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/gray/dubbo.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/prod/dubbo.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/test/dubbo.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-dubbo.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-dubbo/gcloud-goods-dubbo.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-dubbo/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-dubbo/src/main/java/com/gcloud/goods/dubbo/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-dubbo/src/test/java/com/gcloud/goods/dubbo/package-info.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_core_1_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_dao_1_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_domain_1_0_SNAPSHOT.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/event/AreaEvent.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/gcloud_goods_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/gcloud_goods_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-core/gcloud-goods-core.iml" afterPath="$PROJECT_DIR$/gcloud-goods-core/gcloud-goods-core.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-core/pom.xml" afterPath="$PROJECT_DIR$/gcloud-goods-core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/AreaServiceImpl.java" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/AreaServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-dubbo.xml" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-dubbo.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/gcloud-goods-web.iml" afterPath="$PROJECT_DIR$/gcloud-goods-web/gcloud-goods-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring-event.xml" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-event.xml" />
     </list>
     <ignored path="gcloud-goods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +44,38 @@
     <favorites_list name="gcloud-goods" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AreaController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/AreaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.6219512">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-dubbo.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-dubbo.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.107143">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-core/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,7 +110,6 @@
         <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/area.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/dao/impl/AreaDaoImpl.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/dao/IAreaDao.java" />
-        <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/AreaServiceImpl.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IAreaService.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/listener/LogListener.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/package-info.java" />
@@ -112,12 +126,13 @@
         <option value="$PROJECT_DIR$/gcloud-goods-dubbo/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-dubbo/src/main/resources/spring-dubbo.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-core/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-dubbo.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/dev/dubbo.properties" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/gray/dubbo.properties" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/prod/dubbo.properties" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/test/dubbo.properties" />
+        <option value="$PROJECT_DIR$/gcloud-goods-core/pom.xml" />
+        <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-dubbo.xml" />
+        <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/AreaServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -199,6 +214,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,8 +236,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -727,12 +742,13 @@
       <workItem from="1465788824092" duration="972000" />
       <workItem from="1465790033952" duration="220000" />
       <workItem from="1465797211524" duration="4585000" />
-      <workItem from="1465812493722" duration="452000" />
+      <workItem from="1465812493722" duration="892000" />
+      <workItem from="1465813400161" duration="287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11166000" />
+    <option name="totallyTimeSpent" value="11893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -746,7 +762,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19519833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5729387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5359408" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15866388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -772,12 +788,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/event/AreaEvent.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/event/AreaListEvent.java</url>
           <line>26</line>
@@ -956,13 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IAreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07251909">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1033,13 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/AreaServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1070,38 +1066,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/AreaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="116" selection-start-line="47" selection-start-column="116" selection-end-line="47" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/event/AreaEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/event/AreaListEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07436399">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7826087">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,22 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.410714">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2449567">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/dev/dubbo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.101333335">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1157,14 +1109,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35466668">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/dev/dubbo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.116743475">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IAreaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/AreaServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66927594">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-dubbo.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5956113">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        <state vertical-scroll-proportion="-6.107143">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/AreaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6219512">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding />
         </state>
       </provider>

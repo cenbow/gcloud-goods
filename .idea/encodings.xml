@@ -5,7 +5,6 @@
     <file url="file://$PROJECT_DIR$/gcloud-goods-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gcloud-goods-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gcloud-goods-domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gcloud-goods-dubbo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gcloud-goods-solr" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gcloud-goods-sync" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gcloud-goods-web" charset="UTF-8" />
