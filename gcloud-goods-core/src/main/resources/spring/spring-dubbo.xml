@@ -11,8 +11,11 @@
 	<context:component-scan base-package="com.gcloud.goods" />
 
 	<dubbo:application name="${gcloud.dubbo.service}" />
-	<dubbo:registry address="${gcloud.dubbo.registry.url}" check="false" subscribe="false" />
+	<dubbo:registry protocol="zookeeper" address="${gcloud.dubbo.registry.url}" check="false" subscribe="false"/>
 	<dubbo:protocol name="dubbo" port="${gcloud.dubbo.port}" />
 
-	<dubbo:reference id="areaService" interface="com.gcloud.trade.core.IAreaService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>
+	<bean id="demoService" class="com.gcloud.goods.core.impl.DemoServiceImpl" />
+	<dubbo:service interface="com.gcloud.goods.core.IDemoService" ref="demoService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>
+
+	<!--<dubbo:reference id="areaService" interface="com.gcloud.trade.core.IAreaService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>-->
 </beans>
