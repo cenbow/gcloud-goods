@@ -4,7 +4,7 @@
 
 <mapper namespace="Area">
 
-    <resultMap id="AreaMapper" type="com.gcloud.goods.domain.Area">
+    <resultMap id="AreaMapper" type="com.gcloud.goods.domain.Demo">
         <result property="id" column="id"/>
         <result property="type" column="type"/>
         <result property="name" column="name"/>
@@ -12,7 +12,7 @@
         <result property="zip" column="zip"/>
     </resultMap>
 
-    <select id="queryAreaList" resultMap="AreaMapper" parameterType="map">
+    <select id="queryDemoList" resultMap="AreaMapper" parameterType="map">
         SELECT id, type, name, parent_id, zip FROM ts_area
     </select>
 </mapper>

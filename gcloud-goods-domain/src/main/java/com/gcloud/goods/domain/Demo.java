@@ -1,16 +1,18 @@
 package com.gcloud.goods.domain;
 
+import java.io.Serializable;
+
 /**
  * @author ChenJin
  * @version V1.0
- * @Title: Area
- * @Package com.gcloud.event.domain
- * @Description: 区域模型
- * @date 2016/6/12 15:24
+ * @Title: Demo
+ * @Package com.gcloud.goods.domain
+ * @Description: Area地区
+ * @date 2016/6/14 10:27
  */
-public class Area {
+public class Demo implements Serializable {
 
-    public Area() {
+    public Demo() {
 
     }
 

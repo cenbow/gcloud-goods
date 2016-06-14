@@ -1,7 +1,7 @@
 package com.gcloud.goods.dao.impl;
 
-import com.gcloud.goods.dao.IAreaDao;
-import com.gcloud.goods.domain.Area;
+import com.gcloud.goods.dao.IDemoDao;
+import com.gcloud.goods.domain.Demo;
 import com.gcloud.goods.domain.Page;
 import org.apache.commons.collections.MapUtils;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -16,27 +16,27 @@ import java.util.Map;
 /**
  * @author ChenJin
  * @version V1.0
- * @Title: AreaDaoImpl
- * @Package com.gcloud.api
- * @Description: 地址Dao
- * @date 2016/6/1 13:53
+ * @Title: DemoDaoImpl
+ * @Package com.gcloud.goods.dao.impl
+ * @Description: ${TODO}(用一句话描述该文件做什么)
+ * @date 2016/6/14 10:30
  */
-@Repository("areaDao")
-public class AreaDaoImpl implements IAreaDao {
+@Repository("demoDao")
+public class DemoDaoImpl implements IDemoDao {
 
-    private static final Logger log = LogManager.getLogger(AreaDaoImpl.class);
+    private static final Logger log = LogManager.getLogger(DemoDaoImpl.class);
 
     @Resource
     SqlSessionFactory sessionFactory;
 
     @Override
-    public List<Area> queryAreaList(Map<String, Object> condition) {
+    public List<Demo> queryDemoList(Map<String, Object> condition) {
 
-        if( null == MapUtils.getString(condition, "startRow")){
+        if (null == MapUtils.getString(condition, "startRow")) {
             condition.put("startRow", new Page().getStartRow());
             condition.put("offsetRow", new Page().getOffsetRow());
         }
         log.info("===================== queryAreaList ==============================");
-        return sessionFactory.openSession().selectList("Area.queryAreaList", condition);
+        return sessionFactory.openSession().selectList("Demo.queryDemoList", condition);
     }
 }
