@@ -191,6 +191,7 @@
             <build>
                 <filters>
                     <filter>src/main/resources/config/dev/build.properties</filter>
+                    <filter>src/main/resources/config/dev/dubbo.properties</filter>
                 </filters>
             </build>
         </profile>
@@ -205,6 +206,7 @@
             <build>
                 <filters>
                     <filter>src/main/resources/config/gray/build.properties</filter>
+                    <filter>src/main/resources/config/gray/dubbo.properties</filter>
                 </filters>
             </build>
         </profile>
@@ -219,6 +221,7 @@
             <build>
                 <filters>
                     <filter>src/main/resources/config/prod/build.properties</filter>
+                    <filter>src/main/resources/config/prod/dubbo.properties</filter>
                 </filters>
             </build>
         </profile>
@@ -233,6 +236,7 @@
             <build>
                 <filters>
                     <filter>src/main/resources/config/test/build.properties</filter>
+                    <filter>src/main/resources/config/test/dubbo.properties</filter>
                 </filters>
             </build>
         </profile>
