@@ -22,35 +22,30 @@
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gcloud-goods-core" />
       </profile>
       <profile default="false" name="Annotation profile for gcloud-goods-sync" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gcloud-goods-sync" />
       </profile>
       <profile default="false" name="Annotation profile for gcloud-goods-solr" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gcloud-goods-solr" />
       </profile>
       <profile default="false" name="Annotation profile for gcloud-goods-dao" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gcloud-goods-dao" />
       </profile>
       <profile default="false" name="Annotation profile for gcloud-goods-domain" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gcloud-goods-domain" />
       </profile>
       <profile default="false" name="Annotation profile for gcloud-goods-dubbo" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -63,14 +58,18 @@
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gcloud-goods-web" />
       </profile>
       <profile default="false" name="Annotation profile for gcloud-goods-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gcloud-goods-api" />
+      </profile>
+      <profile default="false" name="Annotation profile for gcloud-goods-rpc" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -80,6 +79,7 @@
       <module name="gcloud-goods-dao" target="1.8" />
       <module name="gcloud-goods-domain" target="1.8" />
       <module name="gcloud-goods-dubbo" target="1.8" />
+      <module name="gcloud-goods-rpc" target="1.8" />
       <module name="gcloud-goods-solr" target="1.8" />
       <module name="gcloud-goods-sync" target="1.8" />
       <module name="gcloud-goods-web" target="1.8" />

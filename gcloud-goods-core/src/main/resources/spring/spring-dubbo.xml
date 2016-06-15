@@ -8,14 +8,12 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.gcloud.goods" />
+	<context:component-scan base-package="com.gcloud.trade" />
 
 	<dubbo:application name="${gcloud.dubbo.service}" />
-	<dubbo:registry protocol="zookeeper" address="${gcloud.dubbo.registry.url}" check="false" subscribe="false"/>
-	<dubbo:protocol name="dubbo" port="${gcloud.dubbo.port}" />
+	<dubbo:registry protocol="zookeeper" address="${gcloud.dubbo.zkServer.url}" check="false" subscribe="false"/>
+	<dubbo:protocol name="dubbo" port="${gcloud.dubbo.port}" host="${gcloud.dubbo.host}" />
 
 	<bean id="demoService" class="com.gcloud.goods.core.impl.DemoServiceImpl" />
-	<dubbo:service interface="com.gcloud.goods.core.IDemoService" ref="demoService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>
-
-	<!--<dubbo:reference id="areaService" interface="com.gcloud.trade.core.IAreaService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>-->
+	<dubbo:service ref="demoService" interface="com.gcloud.goods.core.IDemoService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>
 </beans>
