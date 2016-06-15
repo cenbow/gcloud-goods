@@ -93,7 +93,6 @@
             <build>
                 <filters>
                     <filter>src/main/resources/config/dev/event.properties</filter>
-                    <filter>src/main/resources/config/dev/dubbo.properties</filter>
                 </filters>
             </build>
         </profile>
@@ -108,7 +107,6 @@
             <build>
                 <filters>
                     <filter>src/main/resources/config/gray/event.properties</filter>
-                    <filter>src/main/resources/config/gray/dubbo.properties</filter>
                 </filters>
             </build>
         </profile>
@@ -123,7 +121,6 @@
             <build>
                 <filters>
                     <filter>src/main/resources/config/prod/event.properties</filter>
-                    <filter>src/main/resources/config/prod/dubbo.properties</filter>
                 </filters>
             </build>
         </profile>
@@ -138,7 +135,6 @@
             <build>
                 <filters>
                     <filter>src/main/resources/config/test/event.properties</filter>
-                    <filter>src/main/resources/config/test/dubbo.properties</filter>
                 </filters>
             </build>
         </profile>
