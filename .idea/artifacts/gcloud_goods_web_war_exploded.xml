@@ -10,6 +10,9 @@
           <element id="archive" name="gcloud-goods-core-1.0-SNAPSHOT.jar">
             <element id="module-output" name="gcloud-goods-core" />
           </element>
+          <element id="library" level="project" name="Maven: com.gcloud:gcloud-trade-core:1.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.gcloud:gcloud-trade-dao:1.0-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.gcloud:gcloud-trade-domain:1.0-SNAPSHOT" />
           <element id="archive" name="gcloud-goods-dao-1.0-SNAPSHOT.jar">
             <element id="module-output" name="gcloud-goods-dao" />
           </element>

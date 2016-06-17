@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c54deb9-397d-46cd-8492-1c42e5faf0a9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_core_1_0_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_dao_1_0_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_domain_1_0_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_core_1_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_dao_1_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gcloud_gcloud_trade_domain_1_0_SNAPSHOT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/gcloud_goods_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/gcloud_goods_web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-core/gcloud-goods-core.iml" afterPath="$PROJECT_DIR$/gcloud-goods-core/gcloud-goods-core.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-core/pom.xml" afterPath="$PROJECT_DIR$/gcloud-goods-core/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/gcloud-goods-web.iml" afterPath="$PROJECT_DIR$/gcloud-goods-web/gcloud-goods-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/pom.xml" afterPath="$PROJECT_DIR$/gcloud-goods-web/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/dev/dubbo.properties" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/dev/dubbo.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/gray/dubbo.properties" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/gray/dubbo.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/prod/dubbo.properties" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/prod/dubbo.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/test/dubbo.properties" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/test/dubbo.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/spring/spring-dubbo.xml" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/spring/spring-dubbo.xml" />
     </list>
     <ignored path="gcloud-goods.iws" />
@@ -68,8 +70,58 @@
       <file leaf-file-name="spring-dubbo.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/spring/spring-dubbo.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5053192">
-              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.90957445">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-core/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.892857">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dubbo.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/dev/dubbo.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dubbo.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/gray/dubbo.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dubbo.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/prod/dubbo.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dubbo.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/test/dubbo.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -101,8 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gcloud-goods-api/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-dao/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-domain/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-solr/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-sync/pom.xml" />
@@ -147,8 +197,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/dev/dubbo.properties" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/spring/spring-dubbo.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-core/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-web/pom.xml" />
+        <option value="$PROJECT_DIR$/gcloud-goods-core/pom.xml" />
+        <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/dev/dubbo.properties" />
+        <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/gray/dubbo.properties" />
+        <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/prod/dubbo.properties" />
+        <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/test/dubbo.properties" />
         <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/spring/spring-dubbo.xml" />
       </list>
     </option>
@@ -750,12 +804,12 @@
       <workItem from="1465976628358" duration="2106000" />
       <workItem from="1465986446526" duration="3159000" />
       <workItem from="1466047540565" duration="660000" />
-      <workItem from="1466146593572" duration="191000" />
+      <workItem from="1466146593572" duration="905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25216000" />
+    <option name="totallyTimeSpent" value="25930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1056" extended-state="0" />
@@ -1095,35 +1149,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/dev/dubbo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/prod/dubbo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/test/dubbo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31549814">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/dev/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/gray/dubbo.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1154,14 +1180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20489977">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.607143">
@@ -1178,10 +1196,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.892857">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/dev/dubbo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/gray/dubbo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/prod/dubbo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/test/dubbo.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/spring/spring-dubbo.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5053192">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.90957445">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding />
         </state>
       </provider>
