@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 	<context:annotation-config />
-	<context:component-scan base-package="com.gcloud.trade" />
+	<context:component-scan base-package="com.gcloud.goods" />
 
 	<dubbo:application name="${gcloud.dubbo.service}" />
 	<dubbo:registry protocol="zookeeper" address="${gcloud.dubbo.zkServer.url}" check="false" subscribe="false"/>
