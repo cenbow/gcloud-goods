@@ -84,16 +84,18 @@
         <property name="filters" value="stat"/>
     </bean>
 
-    <!-- mybatis文件配置，扫描所有mapper文件 -->
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
-          p:dataSource-ref="dataSource"
-          p:configLocation="classpath:mybatis-config.xml"
-          p:mapperLocations="classpath:/mybatis/*.xml"/>
+    <!-- spring和MyBatis完美整合，不需要mybatis的配置映射文件 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!-- 自动扫描mapper.xml文件 -->
+        <property name="mapperLocations" value="classpath:mybatis/**/*.xml"></property>
+    </bean>
 
-    <!-- spring与mybatis整合配置，扫描所有dao -->
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
-          p:basePackage="com.gcloud.dao"
-          p:sqlSessionFactoryBeanName="sqlSessionFactory"/>
+    <!--&lt;!&ndash; spring与mybatis整合配置，扫描所有dao &ndash;&gt;-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.gcloud.goods.mapper.**/" />
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+    </bean>
 
     <!-- 对dataSource 数据源进行事务管理 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"

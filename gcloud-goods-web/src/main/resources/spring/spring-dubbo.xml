@@ -14,7 +14,7 @@
 	<dubbo:registry protocol="zookeeper" address="${gcloud.dubbo.zkServer.url}" check="false" subscribe="false"/>
 	<dubbo:protocol name="dubbo" port="${gcloud.dubbo.port}" host="${gcloud.dubbo.host}" />
 
-	<bean id="demoService" class="com.gcloud.goods.core.impl.DemoServiceImpl" />
-	<dubbo:service ref="demoService" interface="com.gcloud.goods.core.IDemoService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>
+	<!--<bean id="demoService" class="com.gcloud.goods.core.impl.DemoServiceImpl" />-->
+	<!--<dubbo:service ref="demoService" interface="com.gcloud.goods.core.IDemoService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>-->
 	<!--<dubbo:reference id="areaService" interface="com.gcloud.trade.core.IAreaService" version="${gcloud.dubbo.app.version}" group="${gcloud.dubbo.app.group}"/>-->
 </beans>
