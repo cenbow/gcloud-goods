@@ -257,7 +257,7 @@
     </profiles>
 
     <build>
-        <finalName>gcloud-event</finalName>
+        <finalName>gcloud-goods</finalName>
 
         <!-- 先指定 src/main/resources下所有文件及文件夹为资源文件 -->
         <resources>
