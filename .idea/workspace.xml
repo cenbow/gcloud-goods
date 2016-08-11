@@ -2,42 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c54deb9-397d-46cd-8492-1c42e5faf0a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/Constant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IGoodsSkuService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IGoodsSpuService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/ServcieException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/Version.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/GoodsSkuServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/GoodsSpuServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/GoodsSkuMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/GoodsSpuMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/GoodsSkuMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/GoodsSpuMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-domain/src/main/java/com/gcloud/goods/domain/GoodsSku.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-domain/src/main/java/com/gcloud/goods/domain/GoodsSpu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/bean/ResponseEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSkuController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/request/BaseRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/request/GoodsSkuReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/request/GoodsSpuReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/response/BaseRsponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/response/GoodsSkuRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/response/GoodsSpuRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/sql/db_init_goods.sql" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IDemoService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/DemoServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/dao/IDemoDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/dao/impl/DemoDaoImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/demo.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/config/dev/jdbc.properties" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/config/dev/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/spring/spring-jdbc.xml" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/spring/spring-jdbc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/spring/spring-dubbo.xml" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/spring/spring-dubbo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/sql/db_create.sql" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/sql/db_create.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/dao/package-info.java" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/package-info.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/test/java/com/gcloud/goods/dao/package-info.java" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/test/java/com/gcloud/goods/mapper/package-info.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/sql/db_init_data.sql" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/resources/sql/db_init_area.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/GoodsSkuMapper.java" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/GoodsSkuMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis-config.xml" />
     </list>
     <ignored path="gcloud-goods.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,23 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GoodsSkuController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GoodsSkuController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSkuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70387244">
-              <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodsSkuServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/GoodsSkuServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6666665">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +60,7 @@
       <file leaf-file-name="GoodsSkuMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/GoodsSkuMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.224138">
+            <state vertical-scroll-proportion="-11.535714">
               <caret line="41" column="32" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="32" />
               <folding>
                 <marker date="1470899418238" expanded="true" signature="2969:3083" placeholder="select from ..tb_goods_sku..." />
@@ -117,14 +73,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoodsSpuController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java">
+      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-17.178572">
+              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsSkuMapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/GoodsSkuMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3354735">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,8 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/gray/dubbo.properties" />
-        <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/prod/dubbo.properties" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/test/dubbo.properties" />
         <option value="$PROJECT_DIR$/gcloud-goods-rpc/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/resources/config/dev/event.properties" />
@@ -186,7 +148,6 @@
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/Constant.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/bean/ResponseEntity.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/ServcieException.java" />
-        <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/spring/spring-jdbc.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/dao/GoodsSkuMapper.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/dao/GoodsSpuMapper.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/dao/package-info.java" />
@@ -206,6 +167,9 @@
         <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/response/GoodsSkuRsp.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSkuController.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java" />
+        <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/spring/spring-jdbc.xml" />
+        <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/GoodsSkuMapper.java" />
       </list>
     </option>
   </component>
@@ -267,6 +231,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,18 +242,231 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dbrule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="E:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gcloud-pay" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -294,8 +474,12 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\gcloud-goods\gcloud-goods-core\src\main\resources\spring" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\gcloud-goods\gcloud-goods-web\src\main\java\com\gcloud\goods\web" />
+      <recent name="E:\workspace\gcloud-goods\gcloud-goods-core\src\main\java\com\gcloud\goods\core" />
+      <recent name="E:\workspace\gcloud-goods\gcloud-goods-dao\src\main\resources\mybatis" />
+      <recent name="E:\workspace\gcloud-goods\gcloud-goods-domain\src\main\java\com\gcloud\goods\domain" />
+      <recent name="E:\workspace\gcloud-goods\gcloud-goods-dao\src\main\java\com\gcloud\goods\dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.gcloud.goods.web.response" />
@@ -304,12 +488,8 @@
       <recent name="com.gcloud.goods.core.impl" />
       <recent name="com.gcloud.goods.core" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\gcloud-goods\gcloud-goods-web\src\main\java\com\gcloud\goods\web" />
-      <recent name="E:\workspace\gcloud-goods\gcloud-goods-core\src\main\java\com\gcloud\goods\core" />
-      <recent name="E:\workspace\gcloud-goods\gcloud-goods-dao\src\main\resources\mybatis" />
-      <recent name="E:\workspace\gcloud-goods\gcloud-goods-domain\src\main\java\com\gcloud\goods\domain" />
-      <recent name="E:\workspace\gcloud-goods\gcloud-goods-dao\src\main\java\com\gcloud\goods\dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\gcloud-goods\gcloud-goods-core\src\main\resources\spring" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.gcloud-goods-web">
@@ -808,12 +988,16 @@
       <workItem from="1470728899978" duration="2354000" />
       <workItem from="1470883146386" duration="637000" />
       <workItem from="1470884127651" duration="3186000" />
-      <workItem from="1470893099144" duration="7257000" />
+      <workItem from="1470893099144" duration="9332000" />
+      <workItem from="1470903663549" duration="12000" />
+      <workItem from="1470904723655" duration="1792000" />
+      <workItem from="1470908897232" duration="883000" />
+      <workItem from="1470909791984" duration="871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45745000" />
+    <option name="totallyTimeSpent" value="51378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -829,15 +1013,14 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4217759" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26354167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30232558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50528544" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31078225" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -847,6 +1030,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30232558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -877,6 +1061,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/config/test/dubbo.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18647765">
@@ -902,7 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,15 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.285714">
           <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,15 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.43945578">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/sql/db_init_goods.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37623763">
-          <caret line="14" column="71" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,15 +1185,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5332348">
           <caret line="106" column="39" selection-start-line="4" selection-start-column="0" selection-end-line="106" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,9 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,7 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +1206,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,34 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/spring/spring-jdbc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.517857">
-          <caret line="94" column="55" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
-          <folding>
-            <element signature="e#1463#1476#0" expanded="true" />
-            <element signature="e#1519#1537#0" expanded="true" />
-            <element signature="e#1580#1598#0" expanded="true" />
-            <element signature="e#1676#1695#0" expanded="true" />
-            <element signature="e#1737#1752#0" expanded="true" />
-            <element signature="e#1796#1813#0" expanded="true" />
-            <element signature="e#1887#1902#0" expanded="true" />
-            <element signature="e#2016#2053#0" expanded="true" />
-            <element signature="e#2155#2189#0" expanded="true" />
-            <element signature="e#2928#2941#0" expanded="true" />
-            <element signature="e#2984#3002#0" expanded="true" />
-            <element signature="e#3045#3063#0" expanded="true" />
-            <element signature="e#3141#3160#0" expanded="true" />
-            <element signature="e#3202#3217#0" expanded="true" />
-            <element signature="e#3261#3278#0" expanded="true" />
-            <element signature="e#3352#3367#0" expanded="true" />
-            <element signature="e#3481#3518#0" expanded="true" />
-            <element signature="e#3620#3654#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,25 +1227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.998358">
           <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/demo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19621342">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="61" />
-          <folding>
-            <marker date="1468902021837" expanded="true" signature="613:663" placeholder="SELECT id, t..ts_area..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-domain/src/main/java/com/gcloud/goods/domain/GoodsSku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12006319">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,7 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,7 +1265,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,7 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1475" column="5" selection-start-line="5" selection-start-column="3" selection-end-line="1475" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,7 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,23 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/GoodsSkuMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="31" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/config/dev/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,20 +1311,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IGoodsSkuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/GoodsSpuServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1242,7 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1250,7 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,7 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,7 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1274,24 +1353,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.66303164">
           <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/GoodsSkuServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6666665">
+        <state vertical-scroll-proportion="0.8495093">
           <caret line="41" column="29" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/config/dev/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/resources/sql/db_init_goods.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2992126">
+          <caret line="14" column="71" selection-start-line="0" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IGoodsSkuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7340591">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-domain/src/main/java/com/gcloud/goods/domain/GoodsSku.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12199037">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/spring/spring-jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2680776">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding>
+            <element signature="e#1463#1476#0" expanded="true" />
+            <element signature="e#1519#1537#0" expanded="true" />
+            <element signature="e#1580#1598#0" expanded="true" />
+            <element signature="e#1676#1695#0" expanded="true" />
+            <element signature="e#1737#1752#0" expanded="true" />
+            <element signature="e#1796#1813#0" expanded="true" />
+            <element signature="e#1887#1902#0" expanded="true" />
+            <element signature="e#2016#2053#0" expanded="true" />
+            <element signature="e#2155#2189#0" expanded="true" />
+            <element signature="e#2928#2941#0" expanded="true" />
+            <element signature="e#2984#3002#0" expanded="true" />
+            <element signature="e#3045#3063#0" expanded="true" />
+            <element signature="e#3141#3160#0" expanded="true" />
+            <element signature="e#3202#3217#0" expanded="true" />
+            <element signature="e#3261#3278#0" expanded="true" />
+            <element signature="e#3352#3367#0" expanded="true" />
+            <element signature="e#3481#3518#0" expanded="true" />
+            <element signature="e#3620#3654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSkuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1300,7 +1453,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/GoodsSkuMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.224138">
+        <state vertical-scroll-proportion="-11.535714">
           <caret line="41" column="32" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="32" />
           <folding>
             <marker date="1470899418238" expanded="true" signature="2969:3083" placeholder="select from ..tb_goods_sku..." />
@@ -1312,13 +1465,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSkuController.java">
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70387244">
-          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-17.178572">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/java/com/gcloud/goods/mapper/GoodsSkuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3354735">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

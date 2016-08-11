@@ -42,7 +42,7 @@
     </settings>
 
     <typeAliases>
-        <package name="com.gcloud.domain"/>
+        <package name="com.gcloud.goods.domain"/>
     </typeAliases>
 
     <!--<plugins>-->
