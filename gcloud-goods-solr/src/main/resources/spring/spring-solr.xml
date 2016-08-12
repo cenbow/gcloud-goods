@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
 
-	<bean id="solrServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer">
+	<bean id="solrClient" class="org.apache.solr.client.solrj.impl.HttpSolrClient">
         <constructor-arg value="${gcloud.solr.url}" />
         <property name="maxRetries" value="1" />
         <property name="connectionTimeout" value="5000" />

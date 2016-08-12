@@ -1,10 +1,10 @@
 package com.gcloud.goods.solr;
 
 import com.gcloud.goods.domain.GoodsSpu;
-import org.apache.solr.client.solrj.SolrClient;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
-import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrInputDocument;
 import org.apache.solr.common.params.MapSolrParams;
@@ -21,14 +21,14 @@ import java.util.Map;
  */
 public class SolrUtil {
 
-    private static final String SOLR_URL = "http://127.0.0.1:8080/solr/gcloud_goods";
-
-    private static SolrUtil solrUtil;
-
-    private static SolrClient solrClient;
+    private static final Logger logger = LogManager.getLogger(SolrUtil.class);
 
     private SolrUtil(){
 
+    }
+
+    private static class SolrUtilHandler{
+        public static SolrUtil solrUtil = new SolrUtil();
     }
 
     /**
@@ -36,11 +36,7 @@ public class SolrUtil {
      * @return
      */
     public static SolrUtil getInstance(){
-        if(null == solrUtil){
-            solrUtil = new SolrUtil();
-            solrClient = new HttpSolrClient(SOLR_URL);
-        }
-        return solrUtil;
+        return SolrUtilHandler.solrUtil;
     }
 
     /**
@@ -48,7 +44,7 @@ public class SolrUtil {
      * @param solrParam
      * @return
      */
-    public static QueryResponse query(Map<String, String> solrParam){
+    public QueryResponse query(HttpSolrClient solrClient, Map<String, String> solrParam){
 
         QueryResponse queryResponse = null;
         try {
@@ -59,9 +55,9 @@ public class SolrUtil {
             SolrParams solrParams = initSolrParams(solrParam);
             queryResponse = solrClient.query(solrParams);
         } catch (SolrServerException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return queryResponse;
     }
@@ -71,7 +67,7 @@ public class SolrUtil {
      * @param paramMap
      * @return
      */
-    public static SolrParams initSolrParams(Map<String, String> paramMap){
+    public SolrParams initSolrParams(Map<String, String> paramMap){
         return new MapSolrParams(paramMap);
     }
 
@@ -80,16 +76,15 @@ public class SolrUtil {
      * @param param
      * @return
      */
-    public static int delSolrDocByQuery(Map<String, Object> param){
+    public int delSolrDocByQuery(HttpSolrClient solrClient, Map<String, Object> param){
         int delSize =0;
         try {
-            getInstance();
             solrClient.deleteByQuery(null);
             solrClient.commit();
         } catch (SolrServerException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return delSize;
     }
@@ -99,16 +94,15 @@ public class SolrUtil {
      * @param idList
      * @return
      */
-    public static int delSolrDocById(List<String> idList){
+    public int delSolrDocById(HttpSolrClient solrClient, List<String> idList){
         int delSize =0;
         try {
-            getInstance();
             solrClient.deleteById(idList);
             solrClient.commit();
         } catch (SolrServerException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return delSize;
     }
@@ -118,11 +112,10 @@ public class SolrUtil {
      * @param solrInputDocumentList
      * @return
      */
-    public static int addSolrDoc(List<SolrInputDocument> solrInputDocumentList){
+    public int addSolrDoc(HttpSolrClient solrClient, List<SolrInputDocument> solrInputDocumentList){
 
         int addSize =0;
         try {
-            getInstance();
             solrClient.add(solrInputDocumentList);
             solrClient.optimize();
             solrClient.commit();
@@ -134,28 +127,7 @@ public class SolrUtil {
         return addSize;
     }
 
-    /**
-     *
-     * @param solrServer
-     * @param solrInputDocumentList
-     * @return
-     */
-    public static void addSolrDoc(HttpSolrServer solrServer, List<SolrInputDocument> solrInputDocumentList){
-
-        try {
-            for(SolrInputDocument solrInputDocument : solrInputDocumentList){
-                solrServer.add(solrInputDocument);
-            }
-            solrServer.optimize();
-            solrServer.commit();
-        } catch (SolrServerException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static List<SolrInputDocument> getSolrInputDocument(List<GoodsSpu> goodsSpuList){
+    public List<SolrInputDocument> getSolrInputDocument(List<GoodsSpu> goodsSpuList){
 
         List<SolrInputDocument> solrInputDocumentList = new ArrayList<SolrInputDocument>();
         for(GoodsSpu goodsSpu : goodsSpuList) {

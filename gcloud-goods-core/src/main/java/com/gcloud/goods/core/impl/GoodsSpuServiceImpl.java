@@ -8,7 +8,7 @@ import com.gcloud.goods.domain.GoodsSpu;
 import com.gcloud.goods.solr.SolrUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.solr.client.solrj.impl.HttpSolrServer;
+import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.common.SolrInputDocument;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +33,7 @@ public class GoodsSpuServiceImpl implements IGoodsSpuService {
     private GoodsSpuMapper goodsSpuMapper;
 
     @Resource
-    HttpSolrServer solrServer;
+    HttpSolrClient solrClient;
 
     @Override
     public int deleteByPrimayKey(Long spuId) throws ServcieException {
@@ -70,12 +70,10 @@ public class GoodsSpuServiceImpl implements IGoodsSpuService {
 
         List<GoodsSpu> goodsSpuList = null;
         try{
+
             goodsSpuList = goodsSpuMapper.queryGoodsSpu(params);
-            List<SolrInputDocument> solrInputDocumentList = SolrUtil.getSolrInputDocument(goodsSpuList);
-            if(solrServer != null){
-                SolrUtil.addSolrDoc(solrServer, solrInputDocumentList);
-            }
-            SolrUtil.addSolrDoc(solrInputDocumentList);
+            List<SolrInputDocument> solrInputDocumentList = SolrUtil.getInstance().getSolrInputDocument(goodsSpuList);
+            SolrUtil.getInstance().addSolrDoc(solrClient, solrInputDocumentList);
         } catch (Exception e){
             logger.error(e.getMessage());
             throw new ServcieException(Constant.API_CALL_ERROR, "查询商品SPU出错!");
