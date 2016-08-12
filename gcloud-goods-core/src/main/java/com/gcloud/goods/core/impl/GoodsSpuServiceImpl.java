@@ -33,7 +33,7 @@ public class GoodsSpuServiceImpl implements IGoodsSpuService {
     private GoodsSpuMapper goodsSpuMapper;
 
     @Resource
-    HttpSolrClient solrClient;
+    private HttpSolrClient solrClient;
 
     @Override
     public int deleteByPrimayKey(Long spuId) throws ServcieException {
