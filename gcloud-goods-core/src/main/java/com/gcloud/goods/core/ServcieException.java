@@ -36,7 +36,7 @@ public class ServcieException extends Exception {
     }
 
     public ServcieException(String msgCode, String msgDesc) {
-        super();
+        super(msgDesc);
         this.msgCode = msgCode;
         this.msgDesc = msgDesc;
     }
