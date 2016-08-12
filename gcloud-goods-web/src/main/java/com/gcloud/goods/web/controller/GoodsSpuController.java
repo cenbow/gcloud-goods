@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author ChenJin
@@ -38,8 +39,8 @@ public class GoodsSpuController {
 
         ResponseEntity responseEntity = new ResponseEntity();
         try {
-            GoodsSpu goodsSpu = goodsSpuService.selectByPrimaryKey(goodsSpuReq.getId());
-            responseEntity.setResult(goodsSpu);
+            List<GoodsSpu> goodsSpuList = goodsSpuService.queryGoodsSpu(null);
+            responseEntity.setResult(goodsSpuList);
         } catch (ServcieException e){
             responseEntity.setStatus(e.getMsgCode());
             responseEntity.setMessage(e.getMsgDesc());

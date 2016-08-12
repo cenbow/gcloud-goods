@@ -22,7 +22,7 @@
 </Appenders>
 
 <Loggers>
-    <Logger name="mylog" level="trace" additivity="false">
+    <Logger name="mylog" level="info" additivity="false">
         <AppenderRef ref="MyFile" />
     </Logger>
     <Root level="error">

@@ -7,6 +7,8 @@ import com.gcloud.goods.domain.GoodsSpu;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author ChenJin
@@ -50,6 +52,11 @@ public class GoodsSpuServiceImpl implements IGoodsSpuService {
     @Override
     public int updateByPrimaryKey(GoodsSpu record) throws ServcieException {
         return goodsSpuMapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public List<GoodsSpu> queryGoodsSpu(Map<String, Object> params) throws ServcieException {
+        return goodsSpuMapper.queryGoodsSpu(params);
     }
 
 }

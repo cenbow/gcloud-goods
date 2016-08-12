@@ -2,6 +2,9 @@ package com.gcloud.goods.core;
 
 import com.gcloud.goods.domain.GoodsSpu;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * @author ChenJin
  * @version V1.0
@@ -23,5 +26,12 @@ public interface IGoodsSpuService {
     int updateByPrimaryKeySelective(GoodsSpu record) throws ServcieException;
 
     int updateByPrimaryKey(GoodsSpu record) throws ServcieException;
+
+    /**
+     * 查询商品SPU信息
+     * @param params
+     * @return
+     */
+    List<GoodsSpu> queryGoodsSpu(Map<String, Object> params) throws ServcieException;
 
 }

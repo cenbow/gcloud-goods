@@ -7,6 +7,8 @@ import com.gcloud.goods.mapper.GoodsSkuMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author ChenJin
@@ -51,4 +53,10 @@ public class GoodsSkuServiceImpl implements IGoodsSkuService {
     public int updateByPrimaryKey(GoodsSku record) throws ServcieException {
         return goodsSkuMapper.updateByPrimaryKey(record);
     }
+
+    @Override
+    public List<GoodsSku> queryGoodsSku(Map<String, Object> params) throws ServcieException {
+        return goodsSkuMapper.queryGoodsSku(params);
+    }
+
 }
