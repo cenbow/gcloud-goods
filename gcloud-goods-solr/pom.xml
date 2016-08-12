@@ -28,9 +28,80 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.gcloud</groupId>
+            <artifactId>gcloud-goods-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-solrj</artifactId>
+            <version>${gcloud.solrj.version}</version>
+        </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <configPath>src/main/resources/config/dev</configPath>
+            </properties>
+            <build>
+                <filters>
+                    <filter>src/main/resources/config/dev/solr.properties</filter>
+                </filters>
+            </build>
+        </profile>
+        <profile>
+            <id>gray</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <configPath>src/main/resources/config/gray</configPath>
+            </properties>
+            <build>
+                <filters>
+                    <filter>src/main/resources/config/gray/solr.properties</filter>
+                </filters>
+            </build>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <configPath>src/main/resources/config/prod</configPath>
+            </properties>
+            <build>
+                <filters>
+                    <filter>src/main/resources/config/prod/solr.properties</filter>
+                </filters>
+            </build>
+        </profile>
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <configPath>src/main/resources/test/prod</configPath>
+            </properties>
+            <build>
+                <filters>
+                    <filter>src/main/resources/config/test/solr.properties</filter>
+                </filters>
+            </build>
+        </profile>
+    </profiles>
 
 </project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<bean id="solrServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer">
+        <constructor-arg value="${gcloud.solr.url}" />
+        <property name="maxRetries" value="1" />
+        <property name="connectionTimeout" value="5000" />
+        <property name="soTimeout" value="5000" />
+        <property name="defaultMaxConnectionsPerHost" value="100" />
+        <property name="maxTotalConnections" value="100" />
+        <property name="followRedirects" value="false" />
+        <property name="allowCompression" value="true" />
+    </bean>
+</beans>

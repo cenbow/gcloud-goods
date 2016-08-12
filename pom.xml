@@ -100,7 +100,7 @@
 
         <!-- cloud versions-->
         <gcloud.guava.version>18.0</gcloud.guava.version>
-        <gcloud.solrj.version>6.0.0</gcloud.solrj.version>
+        <gcloud.solrj.version>5.4.0</gcloud.solrj.version>
         <gcloud.kafka.version>0.10.0.0</gcloud.kafka.version>
         <gcloud.mongo.version>3.2.2</gcloud.mongo.version>
         <gcloud.dubbo.version>2.5.3</gcloud.dubbo.version>

@@ -1,9 +1,12 @@
 package com.gcloud.goods.core.impl;
 
+import com.gcloud.goods.core.Constant;
 import com.gcloud.goods.core.IGoodsSkuService;
 import com.gcloud.goods.core.ServcieException;
 import com.gcloud.goods.domain.GoodsSku;
 import com.gcloud.goods.mapper.GoodsSkuMapper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -20,6 +23,8 @@ import java.util.Map;
  */
 @Service("goodsSkuService")
 public class GoodsSkuServiceImpl implements IGoodsSkuService {
+
+    private static final Logger logger = LogManager.getLogger(GoodsSkuServiceImpl.class);
 
     @Resource
     private GoodsSkuMapper goodsSkuMapper;
@@ -56,7 +61,15 @@ public class GoodsSkuServiceImpl implements IGoodsSkuService {
 
     @Override
     public List<GoodsSku> queryGoodsSku(Map<String, Object> params) throws ServcieException {
-        return goodsSkuMapper.queryGoodsSku(params);
+
+        List<GoodsSku> goodsSkuList = null;
+        try {
+            goodsSkuList = goodsSkuMapper.queryGoodsSku(params);
+        } catch (Exception e){
+            logger.error(e.getMessage());
+            throw new ServcieException(Constant.API_CALL_ERROR, "查询商品SKU错误!");
+        }
+        return goodsSkuList;
     }
 
 }
