@@ -1,6 +1,6 @@
 .idea
 .idea/*.xml
-*.iml
+*/*.iml
 */target
 target
 .classpath
