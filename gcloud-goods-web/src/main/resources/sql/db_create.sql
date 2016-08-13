@@ -9,7 +9,8 @@
   DROP TABLE IF EXISTS `tb_goods_spu`;
   CREATE TABLE `tb_goods_spu` (
     `id` bigint(22) DEFAULT NULL,
-    `taobao_id` bigint(22) DEFAULT NULL,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
     `num_iid` bigint(22) NOT NULL DEFAULT '0',
     `on_sale` tinyint(1) DEFAULT NULL,
     `short_title` varchar(64) DEFAULT '',
@@ -24,9 +25,6 @@
     `cost_price` double(11,0) DEFAULT NULL,
     `weight` double(11,0) DEFAULT NULL,
     `barcode` varchar(128) DEFAULT NULL,
-    `created` datetime DEFAULT NULL,
-    `modified` timestamp NULL DEFAULT NULL,
-    `enable_status` tinyint(1) DEFAULT '1',
     `pic_path` varchar(1024) DEFAULT '',
     `title` varchar(64) DEFAULT '',
     `outer_id` varchar(64) DEFAULT '',
@@ -53,14 +51,15 @@
     `defined_2` varchar(1024) DEFAULT '',
     `defined_3` varchar(1024) DEFAULT '',
     `merge_type` tinyint(1) DEFAULT '0',
-    `status` tinyint(1) DEFAULT '0',
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
     PRIMARY KEY (`num_iid`),
-    KEY `taobao_id` (`taobao_id`),
-    KEY `taobao_id_numiid` (`taobao_id`,`num_iid`),
-    KEY `taobao_id_2` (`taobao_id`,`created`),
-    KEY `taobao_id_3` (`taobao_id`,`modified`),
-    KEY `taobao_id_4` (`taobao_id`,`outer_id`),
-    KEY `sys_item_id` (`sys_item_id`)
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_store_id_numiid` (`store_id`,`num_iid`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`),
+    KEY `inx_sys_item_id` (`sys_item_id`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
   -- ----------------------------
@@ -69,7 +68,8 @@
   -- ----------------------------
   DROP TABLE IF EXISTS `tb_goods_sku`;
   CREATE TABLE `tb_goods_sku` (
-    `taobao_id` bigint(22) DEFAULT NULL,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
     `sku_id` bigint(23) NOT NULL,
     `properties_name` varchar(1024) DEFAULT '',
     `num_iid` bigint(22) DEFAULT NULL,
@@ -85,9 +85,6 @@
     `cost_price` double(11,0) DEFAULT NULL,
     `weight` double(11,0) DEFAULT NULL,
     `barcode` varchar(128) DEFAULT '',
-    `created` datetime DEFAULT NULL,
-    `modified` timestamp NULL DEFAULT NULL,
-    `enable_status` tinyint(1) DEFAULT '1',
     `pic_path` varchar(1024) DEFAULT '',
     `title` varchar(64) DEFAULT '',
     `outer_id` varchar(64) DEFAULT '',
@@ -98,10 +95,153 @@
     `cat_id` varchar(2048) DEFAULT '',
     `sys_sku_id` bigint(18) DEFAULT NULL,
     `sku_warehouse_id` bigint(18) DEFAULT NULL,
-    `status` tinyint(1) DEFAULT '0',
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
     PRIMARY KEY (`sku_id`),
-    KEY `taobao_id` (`taobao_id`),
-    KEY `taobao_id_2` (`taobao_id`,`num_iid`),
-    KEY `sys_sku_id` (`sys_sku_id`),
-    KEY `sku_warehouse_id` (`sku_warehouse_id`)
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_store_id_numiid` (`store_id`,`num_iid`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`),
+    KEY `inx_sys_sku_id` (`sys_sku_id`),
+    KEY `inx_sku_warehouse_id` (`sku_warehouse_id`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  DROP TABLE IF EXISTS `tb_item_allocation`;
+  CREATE TABLE `tb_item_allocation` (
+    `id`                 BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
+    `item_sku_id`        BIGINT(22) NOT NULL,
+    `allocation_id`      DOUBLE(11, 2)          DEFAULT 0,
+    `actual_stock`       BIGINT(11)             DEFAULT 0,
+    `available_in_stock` BIGINT(11)             DEFAULT 0,
+    `lock_stock`         BIGINT(11)             DEFAULT 0,
+    `defective_stock`    BIGINT(11)             DEFAULT 0,
+    `alarm_stock`        BIGINT(11)             DEFAULT 0,
+    `alarm`              TINYINT(1)             DEFAULT 0,
+    `quantity`           BIGINT(11)             DEFAULT 0,
+    `goods_allocation`   VARCHAR(64)            DEFAULT "",
+    `factory`            VARCHAR(64)            DEFAULT "",
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`),
+    KEY `inx_item_sku_id` (`item_sku_id`),
+    KEY `inx_allocation_id` (`allocation_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
+
+  DROP TABLE IF EXISTS `tb_allocation`;
+  CREATE TABLE `tb_allocation` (
+    `id`            BIGINT(18) PRIMARY KEY AUTO_INCREMENT,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
+    `name`          VARCHAR(255)           DEFAULT "默认货位",
+    `warehouse_id`  BIGINT(18) NOT NULL,
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
+
+  DROP TABLE IF EXISTS `tb_warehouse`;
+  CREATE TABLE `tb_warehouse` (
+    `id`        BIGINT(18) PRIMARY KEY AUTO_INCREMENT,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
+    `name`      VARCHAR(255)           DEFAULT "默认仓储",
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
+
+  DROP TABLE IF EXISTS `tb_item_supplier`;
+  CREATE TABLE `tb_item_supplier` (
+    `id`             BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
+    `item_sku_id`    BIGINT(22) NOT NULL,
+    `supplier_id`    DOUBLE(11, 2)          DEFAULT 0,
+    `purchase_price` DOUBLE(11, 2)          DEFAULT 0,
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
+
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`),
+    KEY `inx_supplier_id` (`supplier_id`),
+    KEY `inx_item_sku_id`(`item_sku_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
+  ALTER TABLE tb_item_supplier ADD `supplier_name` VARCHAR(128) DEFAULT "";
+  ALTER TABLE tb_item_supplier ADD `type` TINYINT(1) NOT NULL;
+
+  DROP TABLE IF EXISTS `tb_seller_cat`;
+  CREATE TABLE `tb_seller_cat` (
+    `id`                BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
+    `pid`               BIGINT(20)    NOT NULL,
+    `cid`               BIGINT(20)    NOT NULL,
+    `parent_cid`        BIGINT(20)    NOT NULL,
+    `type`              VARCHAR(32)   NULL,
+    `name`              VARCHAR(128)  NOT NULL,
+    `pic_url`           VARCHAR(2048) NOT NULL,
+    `sort_order`        INT(10)       NOT NULL DEFAULT 1,
+    `source_sort_order` INT(10)       NOT NULL DEFAULT 1,
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
+
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`),
+    KEY `inx_store_id_cid` (`store_id`, `parent_cid`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 2  DEFAULT CHARSET = utf8;
+
+  DROP TABLE IF EXISTS `tb_shop_seller_cat`;
+  CREATE TABLE `tb_shop_seller_cat` (
+    `id`             BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
+    `association_id` BIGINT(20)             DEFAULT '-1',
+    `source`         VARCHAR(32) NOT NULL   DEFAULT 'taobao',
+    `is_local`       TINYINT     NOT NULL   DEFAULT 0,
+    `sort_order`     INT(10)     NOT NULL   DEFAULT 1,
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`),
+    KEY `inx_association_id` (`association_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8;
+
+  -- ----------------------------
+  -- Table structure for trade_trace
+  -- ----------------------------
+  DROP TABLE IF EXISTS `tb_trade_trace`;
+  CREATE TABLE `tb_trade_trace` (
+    `id`            BIGINT(18) NOT NULL AUTO_INCREMENT,
+    `company_id` bigint(22) DEFAULT NULL COMMENT '公司ID',
+    `store_id` bigint(22) DEFAULT NULL COMMENT '门店ID',
+    `tid`           BIGINT(20)          DEFAULT NULL,
+    `action`        VARCHAR(64)         DEFAULT NULL,
+    `operator`      VARCHAR(64)         DEFAULT NULL,
+    `operate_time`  DATETIME            DEFAULT NULL,
+    `content`       VARCHAR(128)        DEFAULT NULL,
+    `created`        TIMESTAMP   NOT NULL   DEFAULT '2000-01-01 00:00:00',
+    `modified`       TIMESTAMP   NOT NULL   DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status`  TINYINT(1)             DEFAULT 1,
+    PRIMARY KEY (`id`),
+    KEY `inx_company_id` (`company_id`),
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_id_store` (`company_id`,`store_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
