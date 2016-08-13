@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="gcloud-goods-web:war">
-    <output-path>$PROJECT_DIR$/gcloud-goods-web/target</output-path>
-    <root id="archive" name="gcloud-goods.war">
-      <element id="artifact" artifact-name="gcloud-goods-web:war exploded" />
-    </root>
-  </artifact>
-</component>
