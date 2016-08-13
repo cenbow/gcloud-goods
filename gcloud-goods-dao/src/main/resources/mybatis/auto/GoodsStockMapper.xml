@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gcloud.goods.mapper.GoodsStockMapper" >
+  <resultMap id="BaseResultMap" type="com.gcloud.goods.domain.GoodsStock" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="company_id" property="companyId" jdbcType="BIGINT" />
+    <result column="store_id" property="storeId" jdbcType="BIGINT" />
+    <result column="item_sku_id" property="itemSkuId" jdbcType="BIGINT" />
+    <result column="warehouse_id" property="warehouseId" jdbcType="BIGINT" />
+    <result column="actual_stock" property="actualStock" jdbcType="BIGINT" />
+    <result column="available_stock" property="availableStock" jdbcType="BIGINT" />
+    <result column="lock_stock" property="lockStock" jdbcType="BIGINT" />
+    <result column="defective_stock" property="defectiveStock" jdbcType="BIGINT" />
+    <result column="alarm_stock" property="alarmStock" jdbcType="BIGINT" />
+    <result column="quantity" property="quantity" jdbcType="BIGINT" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="modified" property="modified" jdbcType="TIMESTAMP" />
+    <result column="enable_status" property="enableStatus" jdbcType="BIT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, company_id, store_id, item_sku_id, warehouse_id, actual_stock, available_stock, 
+    lock_stock, defective_stock, alarm_stock, quantity, created, modified, enable_status
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_goods_stock
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from tb_goods_stock
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.gcloud.goods.domain.GoodsStock" >
+    insert into tb_goods_stock (id, company_id, store_id, 
+      item_sku_id, warehouse_id, actual_stock, 
+      available_stock, lock_stock, defective_stock, 
+      alarm_stock, quantity, created, 
+      modified, enable_status)
+    values (#{id,jdbcType=BIGINT}, #{companyId,jdbcType=BIGINT}, #{storeId,jdbcType=BIGINT}, 
+      #{itemSkuId,jdbcType=BIGINT}, #{warehouseId,jdbcType=BIGINT}, #{actualStock,jdbcType=BIGINT}, 
+      #{availableStock,jdbcType=BIGINT}, #{lockStock,jdbcType=BIGINT}, #{defectiveStock,jdbcType=BIGINT}, 
+      #{alarmStock,jdbcType=BIGINT}, #{quantity,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, 
+      #{modified,jdbcType=TIMESTAMP}, #{enableStatus,jdbcType=BIT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.gcloud.goods.domain.GoodsStock" >
+    insert into tb_goods_stock
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="companyId != null" >
+        company_id,
+      </if>
+      <if test="storeId != null" >
+        store_id,
+      </if>
+      <if test="itemSkuId != null" >
+        item_sku_id,
+      </if>
+      <if test="warehouseId != null" >
+        warehouse_id,
+      </if>
+      <if test="actualStock != null" >
+        actual_stock,
+      </if>
+      <if test="availableStock != null" >
+        available_stock,
+      </if>
+      <if test="lockStock != null" >
+        lock_stock,
+      </if>
+      <if test="defectiveStock != null" >
+        defective_stock,
+      </if>
+      <if test="alarmStock != null" >
+        alarm_stock,
+      </if>
+      <if test="quantity != null" >
+        quantity,
+      </if>
+      <if test="created != null" >
+        created,
+      </if>
+      <if test="modified != null" >
+        modified,
+      </if>
+      <if test="enableStatus != null" >
+        enable_status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="companyId != null" >
+        #{companyId,jdbcType=BIGINT},
+      </if>
+      <if test="storeId != null" >
+        #{storeId,jdbcType=BIGINT},
+      </if>
+      <if test="itemSkuId != null" >
+        #{itemSkuId,jdbcType=BIGINT},
+      </if>
+      <if test="warehouseId != null" >
+        #{warehouseId,jdbcType=BIGINT},
+      </if>
+      <if test="actualStock != null" >
+        #{actualStock,jdbcType=BIGINT},
+      </if>
+      <if test="availableStock != null" >
+        #{availableStock,jdbcType=BIGINT},
+      </if>
+      <if test="lockStock != null" >
+        #{lockStock,jdbcType=BIGINT},
+      </if>
+      <if test="defectiveStock != null" >
+        #{defectiveStock,jdbcType=BIGINT},
+      </if>
+      <if test="alarmStock != null" >
+        #{alarmStock,jdbcType=BIGINT},
+      </if>
+      <if test="quantity != null" >
+        #{quantity,jdbcType=BIGINT},
+      </if>
+      <if test="created != null" >
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modified != null" >
+        #{modified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="enableStatus != null" >
+        #{enableStatus,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gcloud.goods.domain.GoodsStock" >
+    update tb_goods_stock
+    <set >
+      <if test="companyId != null" >
+        company_id = #{companyId,jdbcType=BIGINT},
+      </if>
+      <if test="storeId != null" >
+        store_id = #{storeId,jdbcType=BIGINT},
+      </if>
+      <if test="itemSkuId != null" >
+        item_sku_id = #{itemSkuId,jdbcType=BIGINT},
+      </if>
+      <if test="warehouseId != null" >
+        warehouse_id = #{warehouseId,jdbcType=BIGINT},
+      </if>
+      <if test="actualStock != null" >
+        actual_stock = #{actualStock,jdbcType=BIGINT},
+      </if>
+      <if test="availableStock != null" >
+        available_stock = #{availableStock,jdbcType=BIGINT},
+      </if>
+      <if test="lockStock != null" >
+        lock_stock = #{lockStock,jdbcType=BIGINT},
+      </if>
+      <if test="defectiveStock != null" >
+        defective_stock = #{defectiveStock,jdbcType=BIGINT},
+      </if>
+      <if test="alarmStock != null" >
+        alarm_stock = #{alarmStock,jdbcType=BIGINT},
+      </if>
+      <if test="quantity != null" >
+        quantity = #{quantity,jdbcType=BIGINT},
+      </if>
+      <if test="created != null" >
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modified != null" >
+        modified = #{modified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="enableStatus != null" >
+        enable_status = #{enableStatus,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gcloud.goods.domain.GoodsStock" >
+    update tb_goods_stock
+    set company_id = #{companyId,jdbcType=BIGINT},
+      store_id = #{storeId,jdbcType=BIGINT},
+      item_sku_id = #{itemSkuId,jdbcType=BIGINT},
+      warehouse_id = #{warehouseId,jdbcType=BIGINT},
+      actual_stock = #{actualStock,jdbcType=BIGINT},
+      available_stock = #{availableStock,jdbcType=BIGINT},
+      lock_stock = #{lockStock,jdbcType=BIGINT},
+      defective_stock = #{defectiveStock,jdbcType=BIGINT},
+      alarm_stock = #{alarmStock,jdbcType=BIGINT},
+      quantity = #{quantity,jdbcType=BIGINT},
+      created = #{created,jdbcType=TIMESTAMP},
+      modified = #{modified,jdbcType=TIMESTAMP},
+      enable_status = #{enableStatus,jdbcType=BIT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

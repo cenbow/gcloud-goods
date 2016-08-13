@@ -135,7 +135,7 @@ public class SolrUtil {
             solrInputDocument.addField("id", goodsSpu.getId());
             solrInputDocument.addField("area_id", goodsSpu.getId());
             solrInputDocument.addField("area_name", goodsSpu.getPicPath());
-            solrInputDocument.addField("area_type", goodsSpu.getAge());
+            solrInputDocument.addField("area_type", 0);
             solrInputDocument.addField("area_parent_id", goodsSpu.getPropsName());
             solrInputDocument.addField("area_zip", goodsSpu.getBarcode());
             solrInputDocumentList.add(solrInputDocument);
