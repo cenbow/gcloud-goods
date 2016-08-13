@@ -6,18 +6,18 @@ import java.util.List;
 import java.util.Map;
 
 public interface GoodsSkuMapper {
-
-    int deleteByPrimaryKey(Long skuId);
+    int deleteByPrimaryKey(Long goodsSku);
 
     int insert(GoodsSku record);
 
     int insertSelective(GoodsSku record);
 
-    GoodsSku selectByPrimaryKey(Long skuId);
+    GoodsSku selectByPrimaryKey(Long goodsSku);
 
     int updateByPrimaryKeySelective(GoodsSku record);
 
     int updateByPrimaryKey(GoodsSku record);
+
 
     /**
      * 查询SKU数据

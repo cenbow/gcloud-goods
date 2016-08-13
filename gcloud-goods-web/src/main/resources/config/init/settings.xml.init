@@ -9,5 +9,13 @@
 		  <url>http://maven.oschina.net/content/groups/public/</url>
 		  <mirrorOf>central</mirrorOf>
 		</mirror>
+
+		<mirror>
+		  <id>CN</id>
+		  <name>maven.net</name>
+		  <id>plugin-repo-mirror</id>
+		  <url>http://maven.net.cn/content/groups/public/</url>
+		  <mirrorOf>central</mirrorOf>
+		</mirror>
 	</mirrors>
 </settings>
