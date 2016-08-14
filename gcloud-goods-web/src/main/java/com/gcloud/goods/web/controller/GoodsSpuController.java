@@ -36,7 +36,6 @@ public class GoodsSpuController {
     @RequestMapping(value = "/list", method = RequestMethod.POST)
     @ResponseBody
     public ResponseEntity spuList(GoodsSpuReq goodsSpuReq) {
-g
         ResponseEntity responseEntity = new ResponseEntity();
         try {
             List<GoodsSpu> goodsSpuList = goodsSpuService.queryGoodsSpu(null);

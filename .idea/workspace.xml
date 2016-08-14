@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c54deb9-397d-46cd-8492-1c42e5faf0a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-api/gcloud-goods-api.iml" afterPath="$PROJECT_DIR$/gcloud-goods-api/gcloud-goods-api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-core/gcloud-goods-core.iml" afterPath="$PROJECT_DIR$/gcloud-goods-core/gcloud-goods-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-dao/gcloud-goods-dao.iml" afterPath="$PROJECT_DIR$/gcloud-goods-dao/gcloud-goods-dao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-domain/gcloud-goods-domain.iml" afterPath="$PROJECT_DIR$/gcloud-goods-domain/gcloud-goods-domain.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-solr/gcloud-goods-solr.iml" afterPath="$PROJECT_DIR$/gcloud-goods-solr/gcloud-goods-solr.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-sync/gcloud-goods-sync.iml" afterPath="$PROJECT_DIR$/gcloud-goods-sync/gcloud-goods-sync.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/gcloud-goods-web.iml" afterPath="$PROJECT_DIR$/gcloud-goods-web/gcloud-goods-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java" afterPath="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gcloud-goods.iws" />
@@ -51,18 +43,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GoodsSkuMapper.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/auto/GoodsSkuMapper.xml">
+      <file leaf-file-name="GoodsSpuController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7621951">
-              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-              <folding>
-                <marker date="1471103887659" expanded="true" signature="2374:2494" placeholder="select from ..tb_goods_sku..." />
-                <marker date="1471103887659" expanded="true" signature="2577:2651" placeholder="delete from ..." />
-                <marker date="1471103887659" expanded="true" signature="2740:3818" placeholder="insert into ..." />
-                <marker date="1471103887659" expanded="true" signature="7676:9909" placeholder="update tb_go..." />
-                <marker date="1471103887659" expanded="true" signature="10010:11137" placeholder="update tb_go..." />
-              </folding>
+            <state vertical-scroll-proportion="0.28252032">
+              <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,7 +107,6 @@
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IGoodsSpuService.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/IGoodsSkuService.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSkuController.java" />
-        <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/GoodsSkuServiceImpl.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-solr/pom.xml" />
@@ -144,6 +129,7 @@
         <option value="$PROJECT_DIR$/gcloud-goods-solr/src/main/java/com/gcloud/goods/solr/SolrUtil.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-solr/src/main/java/com/gcloud/goods/solr/SolrCouldUtil.java" />
         <option value="$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/auto/GoodsSkuMapper.xml" />
+        <option value="$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java" />
       </list>
     </option>
   </component>
@@ -256,6 +242,106 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gcloud-goods-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -674,12 +760,12 @@
       <workItem from="1470992447852" duration="363000" />
       <workItem from="1471007384272" duration="825000" />
       <workItem from="1471008299102" duration="18605000" />
-      <workItem from="1471138590989" duration="35000" />
+      <workItem from="1471138590989" duration="227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89014000" />
+    <option name="totallyTimeSpent" value="89206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -763,11 +849,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1471103887659" expanded="true" signature="2374:2494" placeholder="select from ..tb_goods_sku..." />
-            <marker date="1471103887659" expanded="true" signature="2577:2651" placeholder="delete from ..." />
-            <marker date="1471103887659" expanded="true" signature="2740:3818" placeholder="insert into ..." />
-            <marker date="1471103887659" expanded="true" signature="7676:9909" placeholder="update tb_go..." />
-            <marker date="1471103887659" expanded="true" signature="10010:11137" placeholder="update tb_go..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="select from ..tb_goods_sku..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="update tb_go..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="update tb_go..." />
           </folding>
         </state>
       </provider>
@@ -777,11 +863,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1471103887659" expanded="true" signature="2374:2494" placeholder="select from ..tb_goods_sku..." />
-            <marker date="1471103887659" expanded="true" signature="2577:2651" placeholder="delete from ..." />
-            <marker date="1471103887659" expanded="true" signature="2740:3818" placeholder="insert into ..." />
-            <marker date="1471103887659" expanded="true" signature="7676:9909" placeholder="update tb_go..." />
-            <marker date="1471103887659" expanded="true" signature="10010:11137" placeholder="update tb_go..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="select from ..tb_goods_sku..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="update tb_go..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="update tb_go..." />
           </folding>
         </state>
       </provider>
@@ -1046,13 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-core/src/main/java/com/gcloud/goods/core/impl/GoodsSkuServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1144,15 +1223,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gcloud-goods-dao/src/main/resources/mybatis/auto/GoodsSkuMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7621951">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.7621951">
+          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
           <folding>
-            <marker date="1471103887659" expanded="true" signature="2374:2494" placeholder="select from ..tb_goods_sku..." />
-            <marker date="1471103887659" expanded="true" signature="2577:2651" placeholder="delete from ..." />
-            <marker date="1471103887659" expanded="true" signature="2740:3818" placeholder="insert into ..." />
-            <marker date="1471103887659" expanded="true" signature="7676:9909" placeholder="update tb_go..." />
-            <marker date="1471103887659" expanded="true" signature="10010:11137" placeholder="update tb_go..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="select from ..tb_goods_sku..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="update tb_go..." />
+            <marker date="1471103887659" expanded="true" signature="-1:-1" placeholder="update tb_go..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcloud-goods-web/src/main/java/com/gcloud/goods/web/controller/GoodsSpuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28252032">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
