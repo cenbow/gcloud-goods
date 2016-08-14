@@ -3,6 +3,50 @@
   SET FOREIGN_KEY_CHECKS = 0;
 
   -- ----------------------------
+  -- Table structure for tb_goods_category
+  -- 商品类目
+  -- ----------------------------
+  DROP TABLE IF EXISTS `tb_goods_category`;
+  CREATE TABLE `tb_goods_category` (
+
+    `id`            BIGINT(30)   NOT NULL COMMENT '商品类目主键',
+    `cat_id`    BIGINT(30)   NOT NULL COMMENT '类目ID',
+    `cat_name`    VARCHAR(64)  DEFAULT '' COMMENT '类目名称',
+    `parent_cid`    BIGINT(30)   NOT NULL COMMENT '父级类目ID',
+    `is_parent`       TINYINT(2)    DEFAULT 0 COMMENT '该类目是否为父类目(即：该类目是否还有子类目)',
+    `status`        TINYINT(2)    DEFAULT 0 COMMENT '当前状态(0 未确认 1 商家确认 2 小二确认  -1 屏蔽  -2 删除)',
+    `platform`      VARCHAR(12)   DEFAULT NULL COMMENT '平台信息',
+    `remark`        VARCHAR(128)  DEFAULT '' COMMENT '备注',
+    `created`       TIMESTAMP   NOT NULL DEFAULT '2000-01-01 00:00:00',
+    `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status` TINYINT(1)  NOT NULL DEFAULT 1,
+    PRIMARY KEY (`id`),
+    KEY `inx_cat` (`cat_id`),
+    KEY `inx_platform` (`platform`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
+
+  -- ----------------------------
+  -- Table structure for tb_goods_brand
+  -- 商品品牌
+  -- ----------------------------
+  DROP TABLE IF EXISTS `tb_goods_brand`;
+  CREATE TABLE `tb_goods_brand` (
+
+    `id`            BIGINT(30)   NOT NULL COMMENT '商品类目主键',
+    `brand_id`    BIGINT(30)   NOT NULL COMMENT '类目ID',
+    `brand_name`    VARCHAR(64)  DEFAULT '' COMMENT '类目名称',
+    `status`        TINYINT(2)    DEFAULT 0 COMMENT '当前状态(0 未确认 1 商家确认 2 小二确认  -1 屏蔽  -2 删除)',
+    `platform`      VARCHAR(12)   DEFAULT NULL COMMENT '平台信息',
+    `remark`        VARCHAR(128)  DEFAULT '' COMMENT '备注',
+    `created`       TIMESTAMP   NOT NULL DEFAULT '2000-01-01 00:00:00',
+    `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `enable_status` TINYINT(1)  NOT NULL DEFAULT 1,
+    PRIMARY KEY (`id`),
+    KEY `inx_cat` (`brand_id`),
+    KEY `inx_platform` (`platform`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
+
+  -- ----------------------------
   -- Table structure for tb_goods_spu
   -- 商品信息SPU表
   -- ----------------------------
@@ -19,8 +63,8 @@
     `pic_path`      VARCHAR(250) DEFAULT '' COMMENT '商品图片',
     `goods_out_spu` VARCHAR(30)  DEFAULT '' COMMENT '商品SPU(外部系统)',
 
-    `cat_id`        VARCHAR(30)   DEFAULT '' COMMENT '商品类目',
-    `brand`         VARCHAR(128)  DEFAULT '' COMMENT '商品品牌',
+    `category_id`   VARCHAR(30)   DEFAULT '' COMMENT '商品类目',
+    `brand_id`      VARCHAR(128)  DEFAULT '' COMMENT '商品品牌',
     `props_name`    VARCHAR(1024) DEFAULT '' COMMENT '商品属性',
     `props_alias`   VARCHAR(1024) DEFAULT '' COMMENT '商品属性别名',
     `sale_props`    VARCHAR(1024) DEFAULT '' COMMENT '销售属性',
