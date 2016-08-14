@@ -14,16 +14,8 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/gcloud-goods-api/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-core/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-domain/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-dubbo/pom.xml" />
         <option value="$PROJECT_DIR$/gcloud-goods-rpc/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-solr/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-sync/pom.xml" />
-        <option value="$PROJECT_DIR$/gcloud-goods-web/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
       </set>
     </option>
   </component>
@@ -37,7 +29,7 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" assert-keyword="false" jdk-15="false" project-jdk-name="jdk1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
