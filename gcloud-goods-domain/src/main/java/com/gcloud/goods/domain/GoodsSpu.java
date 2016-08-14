@@ -7,7 +7,7 @@ public class GoodsSpu {
      * 商品SPU <p/>
      * This field corresponds to the database column tb_goods_spu.goods_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Long goodsSpu;
 
@@ -15,7 +15,7 @@ public class GoodsSpu {
      * 商品SPU表主键 <p/>
      * This field corresponds to the database column tb_goods_spu.id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Long id;
 
@@ -23,7 +23,7 @@ public class GoodsSpu {
      * 公司ID <p/>
      * This field corresponds to the database column tb_goods_spu.company_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Long companyId;
 
@@ -31,7 +31,7 @@ public class GoodsSpu {
      * 门店ID <p/>
      * This field corresponds to the database column tb_goods_spu.store_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Long storeId;
 
@@ -39,7 +39,7 @@ public class GoodsSpu {
      * 商品名称 <p/>
      * This field corresponds to the database column tb_goods_spu.goods_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String goodsName;
 
@@ -47,7 +47,7 @@ public class GoodsSpu {
      * 商品简称 <p/>
      * This field corresponds to the database column tb_goods_spu.short_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String shortName;
 
@@ -55,7 +55,7 @@ public class GoodsSpu {
      * 条形码 <p/>
      * This field corresponds to the database column tb_goods_spu.barcode
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String barcode;
 
@@ -63,7 +63,7 @@ public class GoodsSpu {
      * 商品图片 <p/>
      * This field corresponds to the database column tb_goods_spu.pic_path
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String picPath;
 
@@ -71,31 +71,31 @@ public class GoodsSpu {
      * 商品SPU(外部系统) <p/>
      * This field corresponds to the database column tb_goods_spu.goods_out_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String goodsOutSpu;
 
     /**
      * 商品类目 <p/>
-     * This field corresponds to the database column tb_goods_spu.cat_id
+     * This field corresponds to the database column tb_goods_spu.category_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
-    private String catId;
+    private String categoryId;
 
     /**
      * 商品品牌 <p/>
-     * This field corresponds to the database column tb_goods_spu.brand
+     * This field corresponds to the database column tb_goods_spu.brand_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
-    private String brand;
+    private String brandId;
 
     /**
      * 商品属性 <p/>
      * This field corresponds to the database column tb_goods_spu.props_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String propsName;
 
@@ -103,7 +103,7 @@ public class GoodsSpu {
      * 商品属性别名 <p/>
      * This field corresponds to the database column tb_goods_spu.props_alias
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String propsAlias;
 
@@ -111,7 +111,7 @@ public class GoodsSpu {
      * 销售属性 <p/>
      * This field corresponds to the database column tb_goods_spu.sale_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String saleProps;
 
@@ -119,7 +119,7 @@ public class GoodsSpu {
      * 商品属性(非关键) <p/>
      * This field corresponds to the database column tb_goods_spu.binds_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String bindsProps;
 
@@ -127,7 +127,7 @@ public class GoodsSpu {
      * 商品属性(用户自定义) <p/>
      * This field corresponds to the database column tb_goods_spu.customer_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String customerProps;
 
@@ -135,7 +135,7 @@ public class GoodsSpu {
      * 当前状态(0 未确认 1 商家确认 2 小二确认  -1 屏蔽  -2 删除) <p/>
      * This field corresponds to the database column tb_goods_spu.status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Byte status;
 
@@ -143,7 +143,7 @@ public class GoodsSpu {
      * 是否在线销售 0否 1是 <p/>
      * This field corresponds to the database column tb_goods_spu.on_sale
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Byte onSale;
 
@@ -151,7 +151,7 @@ public class GoodsSpu {
      * 平台信息 <p/>
      * This field corresponds to the database column tb_goods_spu.platform
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String platform;
 
@@ -159,7 +159,7 @@ public class GoodsSpu {
      * 备注 <p/>
      * This field corresponds to the database column tb_goods_spu.remark
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private String remark;
 
@@ -167,7 +167,7 @@ public class GoodsSpu {
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column tb_goods_spu.created
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Date created;
 
@@ -175,7 +175,7 @@ public class GoodsSpu {
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column tb_goods_spu.modified
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Date modified;
 
@@ -183,7 +183,7 @@ public class GoodsSpu {
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column tb_goods_spu.enable_status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     private Boolean enableStatus;
 
@@ -193,7 +193,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.goods_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Long getGoodsSpu() {
         return goodsSpu;
@@ -205,7 +205,7 @@ public class GoodsSpu {
      *
      * @param goodsSpu the value for tb_goods_spu.goods_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setGoodsSpu(Long goodsSpu) {
         this.goodsSpu = goodsSpu;
@@ -217,7 +217,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Long getId() {
         return id;
@@ -229,7 +229,7 @@ public class GoodsSpu {
      *
      * @param id the value for tb_goods_spu.id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setId(Long id) {
         this.id = id;
@@ -241,7 +241,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.company_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Long getCompanyId() {
         return companyId;
@@ -253,7 +253,7 @@ public class GoodsSpu {
      *
      * @param companyId the value for tb_goods_spu.company_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setCompanyId(Long companyId) {
         this.companyId = companyId;
@@ -265,7 +265,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.store_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Long getStoreId() {
         return storeId;
@@ -277,7 +277,7 @@ public class GoodsSpu {
      *
      * @param storeId the value for tb_goods_spu.store_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setStoreId(Long storeId) {
         this.storeId = storeId;
@@ -289,7 +289,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.goods_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getGoodsName() {
         return goodsName;
@@ -301,7 +301,7 @@ public class GoodsSpu {
      *
      * @param goodsName the value for tb_goods_spu.goods_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName == null ? null : goodsName.trim();
@@ -313,7 +313,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.short_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getShortName() {
         return shortName;
@@ -325,7 +325,7 @@ public class GoodsSpu {
      *
      * @param shortName the value for tb_goods_spu.short_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setShortName(String shortName) {
         this.shortName = shortName == null ? null : shortName.trim();
@@ -337,7 +337,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.barcode
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getBarcode() {
         return barcode;
@@ -349,7 +349,7 @@ public class GoodsSpu {
      *
      * @param barcode the value for tb_goods_spu.barcode
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setBarcode(String barcode) {
         this.barcode = barcode == null ? null : barcode.trim();
@@ -361,7 +361,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.pic_path
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getPicPath() {
         return picPath;
@@ -373,7 +373,7 @@ public class GoodsSpu {
      *
      * @param picPath the value for tb_goods_spu.pic_path
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setPicPath(String picPath) {
         this.picPath = picPath == null ? null : picPath.trim();
@@ -385,7 +385,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.goods_out_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getGoodsOutSpu() {
         return goodsOutSpu;
@@ -397,7 +397,7 @@ public class GoodsSpu {
      *
      * @param goodsOutSpu the value for tb_goods_spu.goods_out_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setGoodsOutSpu(String goodsOutSpu) {
         this.goodsOutSpu = goodsOutSpu == null ? null : goodsOutSpu.trim();
@@ -405,50 +405,50 @@ public class GoodsSpu {
 
     /**
      * 商品类目 <p/>
-     * This method returns the value of the database column tb_goods_spu.cat_id
+     * This method returns the value of the database column tb_goods_spu.category_id
      *
-     * @return the value of tb_goods_spu.cat_id
+     * @return the value of tb_goods_spu.category_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
-    public String getCatId() {
-        return catId;
+    public String getCategoryId() {
+        return categoryId;
     }
 
     /**
      * 商品类目 <p/>
-     * This method sets the value of the database column tb_goods_spu.cat_id
+     * This method sets the value of the database column tb_goods_spu.category_id
      *
-     * @param catId the value for tb_goods_spu.cat_id
+     * @param categoryId the value for tb_goods_spu.category_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
-    public void setCatId(String catId) {
-        this.catId = catId == null ? null : catId.trim();
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId == null ? null : categoryId.trim();
     }
 
     /**
      * 商品品牌 <p/>
-     * This method returns the value of the database column tb_goods_spu.brand
+     * This method returns the value of the database column tb_goods_spu.brand_id
      *
-     * @return the value of tb_goods_spu.brand
+     * @return the value of tb_goods_spu.brand_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
-    public String getBrand() {
-        return brand;
+    public String getBrandId() {
+        return brandId;
     }
 
     /**
      * 商品品牌 <p/>
-     * This method sets the value of the database column tb_goods_spu.brand
+     * This method sets the value of the database column tb_goods_spu.brand_id
      *
-     * @param brand the value for tb_goods_spu.brand
+     * @param brandId the value for tb_goods_spu.brand_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
-    public void setBrand(String brand) {
-        this.brand = brand == null ? null : brand.trim();
+    public void setBrandId(String brandId) {
+        this.brandId = brandId == null ? null : brandId.trim();
     }
 
     /**
@@ -457,7 +457,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.props_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getPropsName() {
         return propsName;
@@ -469,7 +469,7 @@ public class GoodsSpu {
      *
      * @param propsName the value for tb_goods_spu.props_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setPropsName(String propsName) {
         this.propsName = propsName == null ? null : propsName.trim();
@@ -481,7 +481,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.props_alias
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getPropsAlias() {
         return propsAlias;
@@ -493,7 +493,7 @@ public class GoodsSpu {
      *
      * @param propsAlias the value for tb_goods_spu.props_alias
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setPropsAlias(String propsAlias) {
         this.propsAlias = propsAlias == null ? null : propsAlias.trim();
@@ -505,7 +505,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.sale_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getSaleProps() {
         return saleProps;
@@ -517,7 +517,7 @@ public class GoodsSpu {
      *
      * @param saleProps the value for tb_goods_spu.sale_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setSaleProps(String saleProps) {
         this.saleProps = saleProps == null ? null : saleProps.trim();
@@ -529,7 +529,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.binds_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getBindsProps() {
         return bindsProps;
@@ -541,7 +541,7 @@ public class GoodsSpu {
      *
      * @param bindsProps the value for tb_goods_spu.binds_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setBindsProps(String bindsProps) {
         this.bindsProps = bindsProps == null ? null : bindsProps.trim();
@@ -553,7 +553,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.customer_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getCustomerProps() {
         return customerProps;
@@ -565,7 +565,7 @@ public class GoodsSpu {
      *
      * @param customerProps the value for tb_goods_spu.customer_props
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setCustomerProps(String customerProps) {
         this.customerProps = customerProps == null ? null : customerProps.trim();
@@ -577,7 +577,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Byte getStatus() {
         return status;
@@ -589,7 +589,7 @@ public class GoodsSpu {
      *
      * @param status the value for tb_goods_spu.status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setStatus(Byte status) {
         this.status = status;
@@ -601,7 +601,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.on_sale
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Byte getOnSale() {
         return onSale;
@@ -613,7 +613,7 @@ public class GoodsSpu {
      *
      * @param onSale the value for tb_goods_spu.on_sale
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setOnSale(Byte onSale) {
         this.onSale = onSale;
@@ -625,7 +625,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.platform
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getPlatform() {
         return platform;
@@ -637,7 +637,7 @@ public class GoodsSpu {
      *
      * @param platform the value for tb_goods_spu.platform
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setPlatform(String platform) {
         this.platform = platform == null ? null : platform.trim();
@@ -649,7 +649,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.remark
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public String getRemark() {
         return remark;
@@ -661,7 +661,7 @@ public class GoodsSpu {
      *
      * @param remark the value for tb_goods_spu.remark
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setRemark(String remark) {
         this.remark = remark == null ? null : remark.trim();
@@ -673,7 +673,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.created
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Date getCreated() {
         return created;
@@ -685,7 +685,7 @@ public class GoodsSpu {
      *
      * @param created the value for tb_goods_spu.created
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setCreated(Date created) {
         this.created = created;
@@ -697,7 +697,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.modified
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Date getModified() {
         return modified;
@@ -709,7 +709,7 @@ public class GoodsSpu {
      *
      * @param modified the value for tb_goods_spu.modified
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setModified(Date modified) {
         this.modified = modified;
@@ -721,7 +721,7 @@ public class GoodsSpu {
      *
      * @return the value of tb_goods_spu.enable_status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public Boolean getEnableStatus() {
         return enableStatus;
@@ -733,7 +733,7 @@ public class GoodsSpu {
      *
      * @param enableStatus the value for tb_goods_spu.enable_status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Sun Aug 14 11:24:31 CST 2016
      */
     public void setEnableStatus(Boolean enableStatus) {
         this.enableStatus = enableStatus;
