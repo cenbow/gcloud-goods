@@ -21,8 +21,8 @@
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
     PRIMARY KEY (`id`),
-    KEY `inx_cat` (`cat_id`),
-    KEY `inx_platform` (`platform`)
+    KEY `inx_goods_cat` (`cat_id`),
+    KEY `inx_goods_platform` (`platform`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
 
   -- ----------------------------
@@ -42,8 +42,8 @@
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
     PRIMARY KEY (`id`),
-    KEY `inx_cat` (`brand_id`),
-    KEY `inx_platform` (`platform`)
+    KEY `inx_goods_brand` (`brand_id`),
+    KEY `inx_goods_platform` (`platform`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
 
   -- ----------------------------
@@ -78,10 +78,11 @@
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
     PRIMARY KEY (`goods_spu`),
+
     KEY `inx_company` (`company_id`),
-    KEY `inx_store` (`store_id`),
-    KEY `inx_company_store` (`company_id`,`store_id`),
-    KEY `inx_store_spu` (`store_id`,`goods_spu`)
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_store` (`company_id`, `store_id`),
+    KEY `inx_company_store_spu` (`company_id`, `store_id`,`goods_spu`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
 
   -- ----------------------------
@@ -116,9 +117,10 @@
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
     PRIMARY KEY (`goods_sku`),
     KEY `inx_company` (`company_id`),
-    KEY `inx_store` (`store_id`),
-    KEY `inx_store_spu` (`store_id`,`goods_spu`),
-    KEY `inx_company_store` (`company_id`,`store_id`)
+    KEY `inx_store_id` (`store_id`),
+    KEY `inx_company_store` (`company_id`, `store_id`),
+    KEY `inx_company_store_spu` (`company_id`, `store_id`, `goods_spu`),
+    KEY `inx_company_store_sku` (`company_id`, `store_id`, `goods_sku`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
 
   -- ----------------------------
@@ -142,10 +144,10 @@
     `created`        TIMESTAMP  NOT NULL DEFAULT '2000-01-01 00:00:00',
     `modified`       TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status`  TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
-    KEY `inx_company_id` (`company_id`),
+    KEY `inx_company` (`company_id`),
     KEY `inx_store_id` (`store_id`),
-    KEY `inx_company_id_store` (`company_id`,`store_id`),
-    KEY `inx_item_sku_id` (`item_sku_id`)
+    KEY `inx_company_store` (`company_id`, `store_id`),
+    KEY `inx_company_store_sku` (`company_id`, `store_id`, `item_sku_id`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
 
   -- ----------------------------
@@ -164,7 +166,7 @@
     `created`       TIMESTAMP   NOT NULL DEFAULT '2000-01-01 00:00:00',
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
-    KEY `inx_company_id` (`company_id`),
+    KEY `inx_company` (`company_id`),
     KEY `inx_store_id` (`store_id`),
-    KEY `inx_company_id_store` (`company_id`,`store_id`)
+    KEY `inx_company_store` (`company_id`, `store_id`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
