@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.Map;
 
 public interface GoodsSpuMapper {
-    int deleteByPrimaryKey(Long goodsSpu);
+    int deleteByPrimaryKey(Long id);
 
     int insert(GoodsSpu record);
 
     int insertSelective(GoodsSpu record);
 
-    GoodsSpu selectByPrimaryKey(Long goodsSpu);
+    GoodsSpu selectByPrimaryKey(Long id);
 
     int updateByPrimaryKeySelective(GoodsSpu record);
 
@@ -24,5 +24,4 @@ public interface GoodsSpuMapper {
      * @return
      */
     List<GoodsSpu> queryGoodsSpu(Map<String, Object> params);
-
 }

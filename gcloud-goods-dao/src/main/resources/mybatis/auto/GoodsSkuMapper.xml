@@ -1,57 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.gcloud.goods.mapper.GoodsSkuMapper">
-  <resultMap id="BaseResultMap" type="com.gcloud.goods.domain.GoodsSku">
-    <id column="goods_sku" jdbcType="BIGINT" property="goodsSku" />
-    <result column="id" jdbcType="BIGINT" property="id" />
-    <result column="company_id" jdbcType="BIGINT" property="companyId" />
-    <result column="store_id" jdbcType="BIGINT" property="storeId" />
-    <result column="goods_spu" jdbcType="BIGINT" property="goodsSpu" />
-    <result column="goods_out_spu" jdbcType="VARCHAR" property="goodsOutSpu" />
-    <result column="goods_out_sku" jdbcType="VARCHAR" property="goodsOutSku" />
-    <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
-    <result column="short_name" jdbcType="VARCHAR" property="shortName" />
-    <result column="barcode" jdbcType="VARCHAR" property="barcode" />
-    <result column="pic_path" jdbcType="VARCHAR" property="picPath" />
-    <result column="props_name" jdbcType="VARCHAR" property="propsName" />
-    <result column="cost_price" jdbcType="DOUBLE" property="costPrice" />
-    <result column="sell_price" jdbcType="DOUBLE" property="sellPrice" />
-    <result column="retail_price" jdbcType="DOUBLE" property="retailPrice" />
-    <result column="member_price" jdbcType="DOUBLE" property="memberPrice" />
-    <result column="special_price" jdbcType="DOUBLE" property="specialPrice" />
-    <result column="weight" jdbcType="DOUBLE" property="weight" />
-    <result column="unit" jdbcType="VARCHAR" property="unit" />
-    <result column="remark" jdbcType="VARCHAR" property="remark" />
-    <result column="created" jdbcType="TIMESTAMP" property="created" />
-    <result column="modified" jdbcType="TIMESTAMP" property="modified" />
-    <result column="enable_status" jdbcType="BIT" property="enableStatus" />
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gcloud.goods.mapper.GoodsSkuMapper" >
+  <resultMap id="BaseResultMap" type="com.gcloud.goods.domain.GoodsSku" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="company_id" property="companyId" jdbcType="BIGINT" />
+    <result column="store_id" property="storeId" jdbcType="BIGINT" />
+    <result column="goods_spu" property="goodsSpu" jdbcType="BIGINT" />
+    <result column="goods_sku" property="goodsSku" jdbcType="BIGINT" />
+    <result column="goods_out_spu" property="goodsOutSpu" jdbcType="VARCHAR" />
+    <result column="goods_out_sku" property="goodsOutSku" jdbcType="VARCHAR" />
+    <result column="goods_name" property="goodsName" jdbcType="VARCHAR" />
+    <result column="short_name" property="shortName" jdbcType="VARCHAR" />
+    <result column="barcode" property="barcode" jdbcType="VARCHAR" />
+    <result column="pic_path" property="picPath" jdbcType="VARCHAR" />
+    <result column="props_name" property="propsName" jdbcType="VARCHAR" />
+    <result column="cost_price" property="costPrice" jdbcType="DOUBLE" />
+    <result column="sell_price" property="sellPrice" jdbcType="DOUBLE" />
+    <result column="retail_price" property="retailPrice" jdbcType="DOUBLE" />
+    <result column="member_price" property="memberPrice" jdbcType="DOUBLE" />
+    <result column="special_price" property="specialPrice" jdbcType="DOUBLE" />
+    <result column="weight" property="weight" jdbcType="DOUBLE" />
+    <result column="unit" property="unit" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="modified" property="modified" jdbcType="TIMESTAMP" />
+    <result column="enable_status" property="enableStatus" jdbcType="BIT" />
   </resultMap>
-  <sql id="Base_Column_List">
-    goods_sku, id, company_id, store_id, goods_spu, goods_out_spu, goods_out_sku, goods_name, 
+  <sql id="Base_Column_List" >
+    id, company_id, store_id, goods_spu, goods_sku, goods_out_spu, goods_out_sku, goods_name, 
     short_name, barcode, pic_path, props_name, cost_price, sell_price, retail_price, 
     member_price, special_price, weight, unit, remark, created, modified, enable_status
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
     select 
     <include refid="Base_Column_List" />
     from tb_goods_sku
-    where goods_sku = #{goodsSku,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from tb_goods_sku
-    where goods_sku = #{goodsSku,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.gcloud.goods.domain.GoodsSku">
-    insert into tb_goods_sku (goods_sku, id, company_id, 
-      store_id, goods_spu, goods_out_spu, 
+  <insert id="insert" parameterType="com.gcloud.goods.domain.GoodsSku" >
+    insert into tb_goods_sku (id, company_id, store_id, 
+      goods_spu, goods_sku, goods_out_spu, 
       goods_out_sku, goods_name, short_name, 
       barcode, pic_path, props_name, 
       cost_price, sell_price, retail_price, 
       member_price, special_price, weight, 
       unit, remark, created, 
       modified, enable_status)
-    values (#{goodsSku,jdbcType=BIGINT}, #{id,jdbcType=BIGINT}, #{companyId,jdbcType=BIGINT}, 
-      #{storeId,jdbcType=BIGINT}, #{goodsSpu,jdbcType=BIGINT}, #{goodsOutSpu,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=BIGINT}, #{companyId,jdbcType=BIGINT}, #{storeId,jdbcType=BIGINT}, 
+      #{goodsSpu,jdbcType=BIGINT}, #{goodsSku,jdbcType=BIGINT}, #{goodsOutSpu,jdbcType=VARCHAR}, 
       #{goodsOutSku,jdbcType=VARCHAR}, #{goodsName,jdbcType=VARCHAR}, #{shortName,jdbcType=VARCHAR}, 
       #{barcode,jdbcType=VARCHAR}, #{picPath,jdbcType=VARCHAR}, #{propsName,jdbcType=VARCHAR}, 
       #{costPrice,jdbcType=DOUBLE}, #{sellPrice,jdbcType=DOUBLE}, #{retailPrice,jdbcType=DOUBLE}, 
@@ -59,229 +59,229 @@
       #{unit,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP}, 
       #{modified,jdbcType=TIMESTAMP}, #{enableStatus,jdbcType=BIT})
   </insert>
-  <insert id="insertSelective" parameterType="com.gcloud.goods.domain.GoodsSku">
+  <insert id="insertSelective" parameterType="com.gcloud.goods.domain.GoodsSku" >
     insert into tb_goods_sku
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="goodsSku != null">
-        goods_sku,
-      </if>
-      <if test="id != null">
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
         id,
       </if>
-      <if test="companyId != null">
+      <if test="companyId != null" >
         company_id,
       </if>
-      <if test="storeId != null">
+      <if test="storeId != null" >
         store_id,
       </if>
-      <if test="goodsSpu != null">
+      <if test="goodsSpu != null" >
         goods_spu,
       </if>
-      <if test="goodsOutSpu != null">
+      <if test="goodsSku != null" >
+        goods_sku,
+      </if>
+      <if test="goodsOutSpu != null" >
         goods_out_spu,
       </if>
-      <if test="goodsOutSku != null">
+      <if test="goodsOutSku != null" >
         goods_out_sku,
       </if>
-      <if test="goodsName != null">
+      <if test="goodsName != null" >
         goods_name,
       </if>
-      <if test="shortName != null">
+      <if test="shortName != null" >
         short_name,
       </if>
-      <if test="barcode != null">
+      <if test="barcode != null" >
         barcode,
       </if>
-      <if test="picPath != null">
+      <if test="picPath != null" >
         pic_path,
       </if>
-      <if test="propsName != null">
+      <if test="propsName != null" >
         props_name,
       </if>
-      <if test="costPrice != null">
+      <if test="costPrice != null" >
         cost_price,
       </if>
-      <if test="sellPrice != null">
+      <if test="sellPrice != null" >
         sell_price,
       </if>
-      <if test="retailPrice != null">
+      <if test="retailPrice != null" >
         retail_price,
       </if>
-      <if test="memberPrice != null">
+      <if test="memberPrice != null" >
         member_price,
       </if>
-      <if test="specialPrice != null">
+      <if test="specialPrice != null" >
         special_price,
       </if>
-      <if test="weight != null">
+      <if test="weight != null" >
         weight,
       </if>
-      <if test="unit != null">
+      <if test="unit != null" >
         unit,
       </if>
-      <if test="remark != null">
+      <if test="remark != null" >
         remark,
       </if>
-      <if test="created != null">
+      <if test="created != null" >
         created,
       </if>
-      <if test="modified != null">
+      <if test="modified != null" >
         modified,
       </if>
-      <if test="enableStatus != null">
+      <if test="enableStatus != null" >
         enable_status,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="goodsSku != null">
-        #{goodsSku,jdbcType=BIGINT},
-      </if>
-      <if test="id != null">
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="companyId != null">
+      <if test="companyId != null" >
         #{companyId,jdbcType=BIGINT},
       </if>
-      <if test="storeId != null">
+      <if test="storeId != null" >
         #{storeId,jdbcType=BIGINT},
       </if>
-      <if test="goodsSpu != null">
+      <if test="goodsSpu != null" >
         #{goodsSpu,jdbcType=BIGINT},
       </if>
-      <if test="goodsOutSpu != null">
+      <if test="goodsSku != null" >
+        #{goodsSku,jdbcType=BIGINT},
+      </if>
+      <if test="goodsOutSpu != null" >
         #{goodsOutSpu,jdbcType=VARCHAR},
       </if>
-      <if test="goodsOutSku != null">
+      <if test="goodsOutSku != null" >
         #{goodsOutSku,jdbcType=VARCHAR},
       </if>
-      <if test="goodsName != null">
+      <if test="goodsName != null" >
         #{goodsName,jdbcType=VARCHAR},
       </if>
-      <if test="shortName != null">
+      <if test="shortName != null" >
         #{shortName,jdbcType=VARCHAR},
       </if>
-      <if test="barcode != null">
+      <if test="barcode != null" >
         #{barcode,jdbcType=VARCHAR},
       </if>
-      <if test="picPath != null">
+      <if test="picPath != null" >
         #{picPath,jdbcType=VARCHAR},
       </if>
-      <if test="propsName != null">
+      <if test="propsName != null" >
         #{propsName,jdbcType=VARCHAR},
       </if>
-      <if test="costPrice != null">
+      <if test="costPrice != null" >
         #{costPrice,jdbcType=DOUBLE},
       </if>
-      <if test="sellPrice != null">
+      <if test="sellPrice != null" >
         #{sellPrice,jdbcType=DOUBLE},
       </if>
-      <if test="retailPrice != null">
+      <if test="retailPrice != null" >
         #{retailPrice,jdbcType=DOUBLE},
       </if>
-      <if test="memberPrice != null">
+      <if test="memberPrice != null" >
         #{memberPrice,jdbcType=DOUBLE},
       </if>
-      <if test="specialPrice != null">
+      <if test="specialPrice != null" >
         #{specialPrice,jdbcType=DOUBLE},
       </if>
-      <if test="weight != null">
+      <if test="weight != null" >
         #{weight,jdbcType=DOUBLE},
       </if>
-      <if test="unit != null">
+      <if test="unit != null" >
         #{unit,jdbcType=VARCHAR},
       </if>
-      <if test="remark != null">
+      <if test="remark != null" >
         #{remark,jdbcType=VARCHAR},
       </if>
-      <if test="created != null">
+      <if test="created != null" >
         #{created,jdbcType=TIMESTAMP},
       </if>
-      <if test="modified != null">
+      <if test="modified != null" >
         #{modified,jdbcType=TIMESTAMP},
       </if>
-      <if test="enableStatus != null">
+      <if test="enableStatus != null" >
         #{enableStatus,jdbcType=BIT},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.gcloud.goods.domain.GoodsSku">
+  <update id="updateByPrimaryKeySelective" parameterType="com.gcloud.goods.domain.GoodsSku" >
     update tb_goods_sku
-    <set>
-      <if test="id != null">
-        id = #{id,jdbcType=BIGINT},
-      </if>
-      <if test="companyId != null">
+    <set >
+      <if test="companyId != null" >
         company_id = #{companyId,jdbcType=BIGINT},
       </if>
-      <if test="storeId != null">
+      <if test="storeId != null" >
         store_id = #{storeId,jdbcType=BIGINT},
       </if>
-      <if test="goodsSpu != null">
+      <if test="goodsSpu != null" >
         goods_spu = #{goodsSpu,jdbcType=BIGINT},
       </if>
-      <if test="goodsOutSpu != null">
+      <if test="goodsSku != null" >
+        goods_sku = #{goodsSku,jdbcType=BIGINT},
+      </if>
+      <if test="goodsOutSpu != null" >
         goods_out_spu = #{goodsOutSpu,jdbcType=VARCHAR},
       </if>
-      <if test="goodsOutSku != null">
+      <if test="goodsOutSku != null" >
         goods_out_sku = #{goodsOutSku,jdbcType=VARCHAR},
       </if>
-      <if test="goodsName != null">
+      <if test="goodsName != null" >
         goods_name = #{goodsName,jdbcType=VARCHAR},
       </if>
-      <if test="shortName != null">
+      <if test="shortName != null" >
         short_name = #{shortName,jdbcType=VARCHAR},
       </if>
-      <if test="barcode != null">
+      <if test="barcode != null" >
         barcode = #{barcode,jdbcType=VARCHAR},
       </if>
-      <if test="picPath != null">
+      <if test="picPath != null" >
         pic_path = #{picPath,jdbcType=VARCHAR},
       </if>
-      <if test="propsName != null">
+      <if test="propsName != null" >
         props_name = #{propsName,jdbcType=VARCHAR},
       </if>
-      <if test="costPrice != null">
+      <if test="costPrice != null" >
         cost_price = #{costPrice,jdbcType=DOUBLE},
       </if>
-      <if test="sellPrice != null">
+      <if test="sellPrice != null" >
         sell_price = #{sellPrice,jdbcType=DOUBLE},
       </if>
-      <if test="retailPrice != null">
+      <if test="retailPrice != null" >
         retail_price = #{retailPrice,jdbcType=DOUBLE},
       </if>
-      <if test="memberPrice != null">
+      <if test="memberPrice != null" >
         member_price = #{memberPrice,jdbcType=DOUBLE},
       </if>
-      <if test="specialPrice != null">
+      <if test="specialPrice != null" >
         special_price = #{specialPrice,jdbcType=DOUBLE},
       </if>
-      <if test="weight != null">
+      <if test="weight != null" >
         weight = #{weight,jdbcType=DOUBLE},
       </if>
-      <if test="unit != null">
+      <if test="unit != null" >
         unit = #{unit,jdbcType=VARCHAR},
       </if>
-      <if test="remark != null">
+      <if test="remark != null" >
         remark = #{remark,jdbcType=VARCHAR},
       </if>
-      <if test="created != null">
+      <if test="created != null" >
         created = #{created,jdbcType=TIMESTAMP},
       </if>
-      <if test="modified != null">
+      <if test="modified != null" >
         modified = #{modified,jdbcType=TIMESTAMP},
       </if>
-      <if test="enableStatus != null">
+      <if test="enableStatus != null" >
         enable_status = #{enableStatus,jdbcType=BIT},
       </if>
     </set>
-    where goods_sku = #{goodsSku,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.gcloud.goods.domain.GoodsSku">
+  <update id="updateByPrimaryKey" parameterType="com.gcloud.goods.domain.GoodsSku" >
     update tb_goods_sku
-    set id = #{id,jdbcType=BIGINT},
-      company_id = #{companyId,jdbcType=BIGINT},
+    set company_id = #{companyId,jdbcType=BIGINT},
       store_id = #{storeId,jdbcType=BIGINT},
       goods_spu = #{goodsSpu,jdbcType=BIGINT},
+      goods_sku = #{goodsSku,jdbcType=BIGINT},
       goods_out_spu = #{goodsOutSpu,jdbcType=VARCHAR},
       goods_out_sku = #{goodsOutSku,jdbcType=VARCHAR},
       goods_name = #{goodsName,jdbcType=VARCHAR},
@@ -300,6 +300,6 @@
       created = #{created,jdbcType=TIMESTAMP},
       modified = #{modified,jdbcType=TIMESTAMP},
       enable_status = #{enableStatus,jdbcType=BIT}
-    where goods_sku = #{goodsSku,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

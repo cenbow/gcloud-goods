@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.gcloud.goods.mapper.GoodsSpuMapper" >
   <resultMap id="BaseResultMap" type="com.gcloud.goods.domain.GoodsSpu" >
-    <id column="goods_spu" property="goodsSpu" jdbcType="BIGINT" />
-    <result column="id" property="id" jdbcType="BIGINT" />
+    <id column="id" property="id" jdbcType="BIGINT" />
     <result column="company_id" property="companyId" jdbcType="BIGINT" />
     <result column="store_id" property="storeId" jdbcType="BIGINT" />
+    <result column="goods_spu" property="goodsSpu" jdbcType="BIGINT" />
     <result column="goods_name" property="goodsName" jdbcType="VARCHAR" />
     <result column="short_name" property="shortName" jdbcType="VARCHAR" />
     <result column="barcode" property="barcode" jdbcType="VARCHAR" />
@@ -27,7 +27,7 @@
     <result column="enable_status" property="enableStatus" jdbcType="BIT" />
   </resultMap>
   <sql id="Base_Column_List" >
-    goods_spu, id, company_id, store_id, goods_name, short_name, barcode, pic_path, goods_out_spu, 
+    id, company_id, store_id, goods_spu, goods_name, short_name, barcode, pic_path, goods_out_spu, 
     category_id, brand_id, props_name, props_alias, sale_props, binds_props, customer_props, 
     `status`, on_sale, platform, remark, created, modified, enable_status
   </sql>
@@ -35,23 +35,23 @@
     select 
     <include refid="Base_Column_List" />
     from tb_goods_spu
-    where goods_spu = #{goodsSpu,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from tb_goods_spu
-    where goods_spu = #{goodsSpu,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.gcloud.goods.domain.GoodsSpu" >
-    insert into tb_goods_spu (goods_spu, id, company_id, 
-      store_id, goods_name, short_name, 
+    insert into tb_goods_spu (id, company_id, store_id, 
+      goods_spu, goods_name, short_name, 
       barcode, pic_path, goods_out_spu, 
       category_id, brand_id, props_name, 
       props_alias, sale_props, binds_props, 
       customer_props, `status`, on_sale, 
       platform, remark, created, 
       modified, enable_status)
-    values (#{goodsSpu,jdbcType=BIGINT}, #{id,jdbcType=BIGINT}, #{companyId,jdbcType=BIGINT}, 
-      #{storeId,jdbcType=BIGINT}, #{goodsName,jdbcType=VARCHAR}, #{shortName,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=BIGINT}, #{companyId,jdbcType=BIGINT}, #{storeId,jdbcType=BIGINT}, 
+      #{goodsSpu,jdbcType=BIGINT}, #{goodsName,jdbcType=VARCHAR}, #{shortName,jdbcType=VARCHAR}, 
       #{barcode,jdbcType=VARCHAR}, #{picPath,jdbcType=VARCHAR}, #{goodsOutSpu,jdbcType=VARCHAR}, 
       #{categoryId,jdbcType=VARCHAR}, #{brandId,jdbcType=VARCHAR}, #{propsName,jdbcType=VARCHAR}, 
       #{propsAlias,jdbcType=VARCHAR}, #{saleProps,jdbcType=VARCHAR}, #{bindsProps,jdbcType=VARCHAR}, 
@@ -62,9 +62,6 @@
   <insert id="insertSelective" parameterType="com.gcloud.goods.domain.GoodsSpu" >
     insert into tb_goods_spu
     <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="goodsSpu != null" >
-        goods_spu,
-      </if>
       <if test="id != null" >
         id,
       </if>
@@ -73,6 +70,9 @@
       </if>
       <if test="storeId != null" >
         store_id,
+      </if>
+      <if test="goodsSpu != null" >
+        goods_spu,
       </if>
       <if test="goodsName != null" >
         goods_name,
@@ -133,9 +133,6 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="goodsSpu != null" >
-        #{goodsSpu,jdbcType=BIGINT},
-      </if>
       <if test="id != null" >
         #{id,jdbcType=BIGINT},
       </if>
@@ -144,6 +141,9 @@
       </if>
       <if test="storeId != null" >
         #{storeId,jdbcType=BIGINT},
+      </if>
+      <if test="goodsSpu != null" >
+        #{goodsSpu,jdbcType=BIGINT},
       </if>
       <if test="goodsName != null" >
         #{goodsName,jdbcType=VARCHAR},
@@ -207,14 +207,14 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.gcloud.goods.domain.GoodsSpu" >
     update tb_goods_spu
     <set >
-      <if test="id != null" >
-        id = #{id,jdbcType=BIGINT},
-      </if>
       <if test="companyId != null" >
         company_id = #{companyId,jdbcType=BIGINT},
       </if>
       <if test="storeId != null" >
         store_id = #{storeId,jdbcType=BIGINT},
+      </if>
+      <if test="goodsSpu != null" >
+        goods_spu = #{goodsSpu,jdbcType=BIGINT},
       </if>
       <if test="goodsName != null" >
         goods_name = #{goodsName,jdbcType=VARCHAR},
@@ -274,13 +274,13 @@
         enable_status = #{enableStatus,jdbcType=BIT},
       </if>
     </set>
-    where goods_spu = #{goodsSpu,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.gcloud.goods.domain.GoodsSpu" >
     update tb_goods_spu
-    set id = #{id,jdbcType=BIGINT},
-      company_id = #{companyId,jdbcType=BIGINT},
+    set company_id = #{companyId,jdbcType=BIGINT},
       store_id = #{storeId,jdbcType=BIGINT},
+      goods_spu = #{goodsSpu,jdbcType=BIGINT},
       goods_name = #{goodsName,jdbcType=VARCHAR},
       short_name = #{shortName,jdbcType=VARCHAR},
       barcode = #{barcode,jdbcType=VARCHAR},
@@ -300,6 +300,6 @@
       created = #{created,jdbcType=TIMESTAMP},
       modified = #{modified,jdbcType=TIMESTAMP},
       enable_status = #{enableStatus,jdbcType=BIT}
-    where goods_spu = #{goodsSpu,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

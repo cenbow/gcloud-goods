@@ -4,18 +4,10 @@ import java.util.Date;
 
 public class GoodsSku {
     /**
-     * 商品SKU <p/>
-     * This field corresponds to the database column tb_goods_sku.goods_sku
-     *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
-     */
-    private Long goodsSku;
-
-    /**
-     * 商品SKU表主键 <p/>
+     * 主键 <p/>
      * This field corresponds to the database column tb_goods_sku.id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Long id;
 
@@ -23,7 +15,7 @@ public class GoodsSku {
      * 公司ID <p/>
      * This field corresponds to the database column tb_goods_sku.company_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Long companyId;
 
@@ -31,7 +23,7 @@ public class GoodsSku {
      * 门店ID <p/>
      * This field corresponds to the database column tb_goods_sku.store_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Long storeId;
 
@@ -39,23 +31,31 @@ public class GoodsSku {
      * 商品SPU <p/>
      * This field corresponds to the database column tb_goods_sku.goods_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Long goodsSpu;
+
+    /**
+     * 商品SKU <p/>
+     * This field corresponds to the database column tb_goods_sku.goods_sku
+     *
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
+     */
+    private Long goodsSku;
 
     /**
      * 商品SPU(外部系统) <p/>
      * This field corresponds to the database column tb_goods_sku.goods_out_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String goodsOutSpu;
 
     /**
-     * 商品外部系统ID <p/>
+     * 商品SKU(外部系统) <p/>
      * This field corresponds to the database column tb_goods_sku.goods_out_sku
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String goodsOutSku;
 
@@ -63,7 +63,7 @@ public class GoodsSku {
      * 商品名称 <p/>
      * This field corresponds to the database column tb_goods_sku.goods_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String goodsName;
 
@@ -71,7 +71,7 @@ public class GoodsSku {
      * 商品简称 <p/>
      * This field corresponds to the database column tb_goods_sku.short_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String shortName;
 
@@ -79,7 +79,7 @@ public class GoodsSku {
      * 条形码 <p/>
      * This field corresponds to the database column tb_goods_sku.barcode
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String barcode;
 
@@ -87,7 +87,7 @@ public class GoodsSku {
      * 商品图片 <p/>
      * This field corresponds to the database column tb_goods_sku.pic_path
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String picPath;
 
@@ -95,7 +95,7 @@ public class GoodsSku {
      * 商品属性 <p/>
      * This field corresponds to the database column tb_goods_sku.props_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String propsName;
 
@@ -103,7 +103,7 @@ public class GoodsSku {
      * 成本价 <p/>
      * This field corresponds to the database column tb_goods_sku.cost_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Double costPrice;
 
@@ -111,7 +111,7 @@ public class GoodsSku {
      * 销售价 <p/>
      * This field corresponds to the database column tb_goods_sku.sell_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Double sellPrice;
 
@@ -119,7 +119,7 @@ public class GoodsSku {
      * 零售价 <p/>
      * This field corresponds to the database column tb_goods_sku.retail_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Double retailPrice;
 
@@ -127,7 +127,7 @@ public class GoodsSku {
      * 会员价 <p/>
      * This field corresponds to the database column tb_goods_sku.member_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Double memberPrice;
 
@@ -135,7 +135,7 @@ public class GoodsSku {
      * 特价 <p/>
      * This field corresponds to the database column tb_goods_sku.special_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Double specialPrice;
 
@@ -143,7 +143,7 @@ public class GoodsSku {
      * 重量 <p/>
      * This field corresponds to the database column tb_goods_sku.weight
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Double weight;
 
@@ -151,7 +151,7 @@ public class GoodsSku {
      * 单位 <p/>
      * This field corresponds to the database column tb_goods_sku.unit
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String unit;
 
@@ -159,7 +159,7 @@ public class GoodsSku {
      * 备注 <p/>
      * This field corresponds to the database column tb_goods_sku.remark
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private String remark;
 
@@ -167,7 +167,7 @@ public class GoodsSku {
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column tb_goods_sku.created
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Date created;
 
@@ -175,61 +175,37 @@ public class GoodsSku {
      * This field was generated by MyBatis Generator.
      * This field corresponds to the database column tb_goods_sku.modified
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Date modified;
 
     /**
-     * This field was generated by MyBatis Generator.
+     * 0否 1是 <p/>
      * This field corresponds to the database column tb_goods_sku.enable_status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     private Boolean enableStatus;
 
     /**
-     * 商品SKU <p/>
-     * This method returns the value of the database column tb_goods_sku.goods_sku
-     *
-     * @return the value of tb_goods_sku.goods_sku
-     *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
-     */
-    public Long getGoodsSku() {
-        return goodsSku;
-    }
-
-    /**
-     * 商品SKU <p/>
-     * This method sets the value of the database column tb_goods_sku.goods_sku
-     *
-     * @param goodsSku the value for tb_goods_sku.goods_sku
-     *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
-     */
-    public void setGoodsSku(Long goodsSku) {
-        this.goodsSku = goodsSku;
-    }
-
-    /**
-     * 商品SKU表主键 <p/>
+     * 主键 <p/>
      * This method returns the value of the database column tb_goods_sku.id
      *
      * @return the value of tb_goods_sku.id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Long getId() {
         return id;
     }
 
     /**
-     * 商品SKU表主键 <p/>
+     * 主键 <p/>
      * This method sets the value of the database column tb_goods_sku.id
      *
      * @param id the value for tb_goods_sku.id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setId(Long id) {
         this.id = id;
@@ -241,7 +217,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.company_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Long getCompanyId() {
         return companyId;
@@ -253,7 +229,7 @@ public class GoodsSku {
      *
      * @param companyId the value for tb_goods_sku.company_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setCompanyId(Long companyId) {
         this.companyId = companyId;
@@ -265,7 +241,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.store_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Long getStoreId() {
         return storeId;
@@ -277,7 +253,7 @@ public class GoodsSku {
      *
      * @param storeId the value for tb_goods_sku.store_id
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setStoreId(Long storeId) {
         this.storeId = storeId;
@@ -289,7 +265,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.goods_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Long getGoodsSpu() {
         return goodsSpu;
@@ -301,10 +277,34 @@ public class GoodsSku {
      *
      * @param goodsSpu the value for tb_goods_sku.goods_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setGoodsSpu(Long goodsSpu) {
         this.goodsSpu = goodsSpu;
+    }
+
+    /**
+     * 商品SKU <p/>
+     * This method returns the value of the database column tb_goods_sku.goods_sku
+     *
+     * @return the value of tb_goods_sku.goods_sku
+     *
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
+     */
+    public Long getGoodsSku() {
+        return goodsSku;
+    }
+
+    /**
+     * 商品SKU <p/>
+     * This method sets the value of the database column tb_goods_sku.goods_sku
+     *
+     * @param goodsSku the value for tb_goods_sku.goods_sku
+     *
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
+     */
+    public void setGoodsSku(Long goodsSku) {
+        this.goodsSku = goodsSku;
     }
 
     /**
@@ -313,7 +313,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.goods_out_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getGoodsOutSpu() {
         return goodsOutSpu;
@@ -325,31 +325,31 @@ public class GoodsSku {
      *
      * @param goodsOutSpu the value for tb_goods_sku.goods_out_spu
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setGoodsOutSpu(String goodsOutSpu) {
         this.goodsOutSpu = goodsOutSpu == null ? null : goodsOutSpu.trim();
     }
 
     /**
-     * 商品外部系统ID <p/>
+     * 商品SKU(外部系统) <p/>
      * This method returns the value of the database column tb_goods_sku.goods_out_sku
      *
      * @return the value of tb_goods_sku.goods_out_sku
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getGoodsOutSku() {
         return goodsOutSku;
     }
 
     /**
-     * 商品外部系统ID <p/>
+     * 商品SKU(外部系统) <p/>
      * This method sets the value of the database column tb_goods_sku.goods_out_sku
      *
      * @param goodsOutSku the value for tb_goods_sku.goods_out_sku
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setGoodsOutSku(String goodsOutSku) {
         this.goodsOutSku = goodsOutSku == null ? null : goodsOutSku.trim();
@@ -361,7 +361,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.goods_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getGoodsName() {
         return goodsName;
@@ -373,7 +373,7 @@ public class GoodsSku {
      *
      * @param goodsName the value for tb_goods_sku.goods_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setGoodsName(String goodsName) {
         this.goodsName = goodsName == null ? null : goodsName.trim();
@@ -385,7 +385,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.short_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getShortName() {
         return shortName;
@@ -397,7 +397,7 @@ public class GoodsSku {
      *
      * @param shortName the value for tb_goods_sku.short_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setShortName(String shortName) {
         this.shortName = shortName == null ? null : shortName.trim();
@@ -409,7 +409,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.barcode
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getBarcode() {
         return barcode;
@@ -421,7 +421,7 @@ public class GoodsSku {
      *
      * @param barcode the value for tb_goods_sku.barcode
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setBarcode(String barcode) {
         this.barcode = barcode == null ? null : barcode.trim();
@@ -433,7 +433,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.pic_path
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getPicPath() {
         return picPath;
@@ -445,7 +445,7 @@ public class GoodsSku {
      *
      * @param picPath the value for tb_goods_sku.pic_path
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setPicPath(String picPath) {
         this.picPath = picPath == null ? null : picPath.trim();
@@ -457,7 +457,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.props_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getPropsName() {
         return propsName;
@@ -469,7 +469,7 @@ public class GoodsSku {
      *
      * @param propsName the value for tb_goods_sku.props_name
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setPropsName(String propsName) {
         this.propsName = propsName == null ? null : propsName.trim();
@@ -481,7 +481,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.cost_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Double getCostPrice() {
         return costPrice;
@@ -493,7 +493,7 @@ public class GoodsSku {
      *
      * @param costPrice the value for tb_goods_sku.cost_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setCostPrice(Double costPrice) {
         this.costPrice = costPrice;
@@ -505,7 +505,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.sell_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Double getSellPrice() {
         return sellPrice;
@@ -517,7 +517,7 @@ public class GoodsSku {
      *
      * @param sellPrice the value for tb_goods_sku.sell_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setSellPrice(Double sellPrice) {
         this.sellPrice = sellPrice;
@@ -529,7 +529,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.retail_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Double getRetailPrice() {
         return retailPrice;
@@ -541,7 +541,7 @@ public class GoodsSku {
      *
      * @param retailPrice the value for tb_goods_sku.retail_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setRetailPrice(Double retailPrice) {
         this.retailPrice = retailPrice;
@@ -553,7 +553,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.member_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Double getMemberPrice() {
         return memberPrice;
@@ -565,7 +565,7 @@ public class GoodsSku {
      *
      * @param memberPrice the value for tb_goods_sku.member_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setMemberPrice(Double memberPrice) {
         this.memberPrice = memberPrice;
@@ -577,7 +577,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.special_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Double getSpecialPrice() {
         return specialPrice;
@@ -589,7 +589,7 @@ public class GoodsSku {
      *
      * @param specialPrice the value for tb_goods_sku.special_price
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setSpecialPrice(Double specialPrice) {
         this.specialPrice = specialPrice;
@@ -601,7 +601,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.weight
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Double getWeight() {
         return weight;
@@ -613,7 +613,7 @@ public class GoodsSku {
      *
      * @param weight the value for tb_goods_sku.weight
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setWeight(Double weight) {
         this.weight = weight;
@@ -625,7 +625,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.unit
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getUnit() {
         return unit;
@@ -637,7 +637,7 @@ public class GoodsSku {
      *
      * @param unit the value for tb_goods_sku.unit
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setUnit(String unit) {
         this.unit = unit == null ? null : unit.trim();
@@ -649,7 +649,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.remark
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public String getRemark() {
         return remark;
@@ -661,7 +661,7 @@ public class GoodsSku {
      *
      * @param remark the value for tb_goods_sku.remark
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setRemark(String remark) {
         this.remark = remark == null ? null : remark.trim();
@@ -673,7 +673,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.created
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Date getCreated() {
         return created;
@@ -685,7 +685,7 @@ public class GoodsSku {
      *
      * @param created the value for tb_goods_sku.created
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setCreated(Date created) {
         this.created = created;
@@ -697,7 +697,7 @@ public class GoodsSku {
      *
      * @return the value of tb_goods_sku.modified
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Date getModified() {
         return modified;
@@ -709,31 +709,31 @@ public class GoodsSku {
      *
      * @param modified the value for tb_goods_sku.modified
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setModified(Date modified) {
         this.modified = modified;
     }
 
     /**
-     * This method was generated by MyBatis Generator.
+     * 0否 1是 <p/>
      * This method returns the value of the database column tb_goods_sku.enable_status
      *
      * @return the value of tb_goods_sku.enable_status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public Boolean getEnableStatus() {
         return enableStatus;
     }
 
     /**
-     * This method was generated by MyBatis Generator.
+     * 0否 1是 <p/>
      * This method sets the value of the database column tb_goods_sku.enable_status
      *
      * @param enableStatus the value for tb_goods_sku.enable_status
      *
-     * @mbggenerated Sat Aug 13 22:53:42 CST 2016
+     * @mbggenerated Mon Aug 15 18:23:50 CST 2016
      */
     public void setEnableStatus(Boolean enableStatus) {
         this.enableStatus = enableStatus;

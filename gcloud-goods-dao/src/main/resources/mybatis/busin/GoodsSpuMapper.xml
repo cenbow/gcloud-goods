@@ -2,9 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.gcloud.goods.mapper.GoodsSpuMapper" >
 
-  <select id="queryGoodsSpu" resultMap="BaseResultMap" parameterType="java.util.Map" >
-    select
-    <include refid="Base_Column_List" />
-    from tb_goods_spu
-  </select>
+    <select id="queryGoodsSpu" resultMap="BaseResultMap" parameterType="java.util.Map" >
+        select
+        <include refid="Base_Column_List" />
+        from tb_goods_spu
+    </select>
 </mapper>
