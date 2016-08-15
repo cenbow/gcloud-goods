@@ -9,7 +9,7 @@
   DROP TABLE IF EXISTS `tb_goods_category`;
   CREATE TABLE `tb_goods_category` (
 
-    `id`            BIGINT(30) PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
+    `id`            BIGINT(30)   PRIMARY KEY COMMENT '主键',
     `cat_id`        BIGINT(30)   NOT NULL COMMENT '类目ID',
     `cat_name`      VARCHAR(64)  DEFAULT '' COMMENT '类目名称',
     `parent_cid`    BIGINT(30)   NOT NULL COMMENT '父级类目ID',
@@ -20,7 +20,7 @@
     `created`       TIMESTAMP   NOT NULL DEFAULT '2000-01-01 00:00:00',
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
-    PRIMARY KEY (`id`),
+
     KEY `inx_goods_cat` (`cat_id`),
     KEY `inx_goods_platform` (`platform`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
@@ -32,7 +32,7 @@
   DROP TABLE IF EXISTS `tb_goods_brand`;
   CREATE TABLE `tb_goods_brand` (
 
-    `id`            BIGINT(30)  PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
+    `id`            BIGINT(30)  PRIMARY KEY COMMENT '主键',
     `brand_id`      BIGINT(30)  NOT NULL COMMENT '类目ID',
     `brand_name`    VARCHAR(64) DEFAULT '' COMMENT '类目名称',
     `status`        TINYINT(2)  DEFAULT 0 COMMENT '当前状态(0 未确认 1 商家确认 2 小二确认  -1 屏蔽  -2 删除)',
@@ -41,7 +41,7 @@
     `created`       TIMESTAMP   NOT NULL DEFAULT '2000-01-01 00:00:00',
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
-    PRIMARY KEY (`id`),
+
     KEY `inx_goods_brand` (`brand_id`),
     KEY `inx_goods_platform` (`platform`)
   ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = UTF8;
@@ -53,7 +53,7 @@
   DROP TABLE IF EXISTS `tb_goods_spu`;
   CREATE TABLE `tb_goods_spu` (
 
-    `id`            BIGINT(30)   PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
+    `id`            BIGINT(30)   PRIMARY KEY COMMENT '主键',
     `company_id`    BIGINT(30)   NOT NULL COMMENT '公司ID',
     `store_id`      BIGINT(30)   NOT NULL COMMENT '门店ID',
     `goods_spu`     BIGINT(30)   NOT NULL COMMENT '商品SPU',
@@ -77,7 +77,6 @@
     `created`       TIMESTAMP   NOT NULL DEFAULT '2000-01-01 00:00:00',
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
-    PRIMARY KEY (`goods_spu`),
 
     KEY `inx_company` (`company_id`),
     KEY `inx_store_id` (`store_id`),
@@ -92,7 +91,7 @@
   DROP TABLE IF EXISTS `tb_goods_sku`;
   CREATE TABLE `tb_goods_sku` (
 
-    `id`            BIGINT(30)   PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
+    `id`            BIGINT(30)   PRIMARY KEY COMMENT '主键',
     `company_id`    BIGINT(30)   NOT NULL COMMENT '公司ID',
     `store_id`      BIGINT(30)   NOT NULL COMMENT '门店ID',
     `goods_spu`     BIGINT(30)   NOT NULL COMMENT '商品SPU',
@@ -115,7 +114,7 @@
     `created`       TIMESTAMP   NOT NULL DEFAULT '2000-01-01 00:00:00',
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
-    PRIMARY KEY (`goods_sku`),
+
     KEY `inx_company` (`company_id`),
     KEY `inx_store_id` (`store_id`),
     KEY `inx_company_store` (`company_id`, `store_id`),
@@ -130,7 +129,7 @@
   DROP TABLE IF EXISTS `tb_goods_stock`;
   CREATE TABLE `tb_goods_stock` (
 
-    `id`             BIGINT(30) PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
+    `id`             BIGINT(30) PRIMARY KEY COMMENT '主键',
     `company_id`     BIGINT(30) DEFAULT NULL COMMENT '公司ID',
     `store_id`       BIGINT(30) DEFAULT NULL COMMENT '门店ID',
     `item_sku_id`    BIGINT(30) NOT NULL  COMMENT '商品SKU',
@@ -144,6 +143,7 @@
     `created`        TIMESTAMP  NOT NULL DEFAULT '2000-01-01 00:00:00',
     `modified`       TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status`  TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
+
     KEY `inx_company` (`company_id`),
     KEY `inx_store_id` (`store_id`),
     KEY `inx_company_store` (`company_id`, `store_id`),
@@ -156,7 +156,8 @@
   -- ----------------------------
   DROP TABLE IF EXISTS `tb_warehouse`;
   CREATE TABLE `tb_warehouse` (
-    `id`            BIGINT(30) PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
+
+    `id`            BIGINT(30)   PRIMARY KEY COMMENT '主键',
     `company_id`    BIGINT(30)   DEFAULT NULL COMMENT '公司ID',
     `store_id`      BIGINT(30)   DEFAULT NULL COMMENT '门店ID',
     `warehouse_id`  BIGINT(30)   DEFAULT NULL COMMENT '仓库ID',
@@ -166,6 +167,7 @@
     `created`       TIMESTAMP   NOT NULL DEFAULT '2000-01-01 00:00:00',
     `modified`      TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `enable_status` TINYINT(1)  NOT NULL DEFAULT 1 COMMENT '0否 1是',
+
     KEY `inx_company` (`company_id`),
     KEY `inx_store_id` (`store_id`),
     KEY `inx_company_store` (`company_id`, `store_id`)
